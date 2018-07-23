@@ -11,10 +11,25 @@
     font-size: 200%;
 }
 
-#myVideo {
-    position: fixed;
+#video{
+/*    position: relative;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    z-index: -2000;*/
+
+
+    position: relative;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+
+
+
+.clear-left-border{
+    margin-left: 0px;
+    width: 100%;
+    padding-left: 0px;
 }

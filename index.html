@@ -5,7 +5,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122301153-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-122301153-1');
@@ -43,79 +47,73 @@
 
 <body>
 
-<video autoplay muted loop id="myVideo">
+<video autoplay muted loop id="video">
     <source src="video/Header_Video_1.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
 
-
 <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="logo" href="index.html">
+            <div class="govrgologo">govrgo.ru</div>
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#price-anchor" class="scroll">Аренда</a></li>
+            <li><a href="#games-anchor">Игры</a></li>
+            <li><a href="#">Мероприятия</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div><!--/.navbar-collapse -->
+</div>
+
+<div class="container">
+    <div class="row header-info">
+        <div class="col-xs-6">
             <a class="logo" href="index.html">
                 <div class="govrgologo">govrgo.ru</div>
             </a>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#pricing" class="scroll">Аренда</a></li>
-                <li><a href="#">Игры</a></li>
-                <li><a href="#">Мероприятия</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </div><!--/.navbar-collapse -->
-    </div>
-</div>
-
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6">
-                <a href="index.html">
-                    <div class="govrgologo">govrgo.ru</div>
-                </a>
-            </div>
-            <div class="col-xs-6 signin text-right navbar-nav">
-                <a href="#pricing" class="scroll">Аренда</a>&nbsp; &nbsp;<a href="#">Игры</a> <a
-                    href="#">Мероприятия</a> <a href="#">Контакты</a>
-            </div>
+        <div class="col-xs-6 signin text-right navbar-nav">
+            <a href="#price-anchor"class="scroll">Аренда</a>&nbsp; &nbsp;<a href="#games-anchor">Игры</a> <a
+                href="#">Мероприятия</a> <a href="#">Контакты</a>
         </div>
+    </div>
 
-        <div class="row header-info">
-            <div class="col-sm-10 col-sm-offset-1 text-center">
-                <h1 class="wow fadeIn">Аренда виртуальной реальности</h1>
-                <br/>
-                <p class="lead wow fadeIn" data-wow-delay="0.5s">Приедим к Вам со всем необходимым оборудованием,
-                    от Вас свободное пространство 2 на 2 метра и розетка на 220в, вот и все, можно окунуться в мир VR.
-                </p>
+    <div class="row middle-info">
+        <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h1 class="wow fadeIn">Аренда виртуальной реальности</h1>
+            <br/>
+            <p class="lead wow fadeIn" data-wow-delay="0.5s">Приедим к Вам со всем необходимым оборудованием,
+                от Вас свободное пространство 2 на 2 метра и розетка на 220в, вот и все, можно окунуться в мир VR.
+            </p>
 
 
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                        <div class="row">
-                            <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
-                                <a href="#be-the-first" class="btn btn-secondary btn-lg scroll">Игры</a>
-                            </div>
-                            <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
-                                <a href="#invite" class="btn btn-primary btn-lg scroll">Цены</a>
-                            </div>
-                        </div><!--End Button Row-->
-                    </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <div class="row">
+                        <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
+                            <a href="#games-anchor" class="btn btn-secondary btn-lg scroll">Игры</a>
+                        </div>
+                        <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
+                            <a href="#price-anchor" class="btn btn-primary btn-lg scroll">Цены</a>
+                        </div>
+                    </div><!--End Button Row-->
                 </div>
-
             </div>
-        </div>
-    </div>
-</header>
 
-<div class="mouse-icon hidden-xs">
-    <div class="scroll"></div>
+        </div>
+
+    </div>
+
 </div>
+
 
 <section id="be-the-first" class="pad-xl">
     <div class="container">
@@ -132,7 +130,7 @@
     </div>
 </section>
 
-<section id="main-info" class="pad-xl">
+<section id="games-anchor" class="pad-xl">
     <div class="container">
 
         <div class="container">
@@ -144,152 +142,152 @@
             </div>
 
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/Beat Saber.jpg" alt="">
-                <div class="overlay">
-                    <h2>1 игрок</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/Beat Saber.jpg" alt="">
+                    <div class="overlay">
+                        <h2>1 игрок</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/budget_cuts.jpg" alt="">
-                <div class="overlay">
-                    <h2>1 игрок</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/budget_cuts.jpg" alt="">
+                    <div class="overlay">
+                        <h2>1 игрок</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/in_death.jpg" alt="">
-                <div class="overlay">
-                    <h2>1 игрок</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/in_death.jpg" alt="">
+                    <div class="overlay">
+                        <h2>1 игрок</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/sairento.jpg" alt="">
-                <div class="overlay">
-                    <h2>Hover effect 1</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/sairento.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Hover effect 1</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/Arizona Sunshine.jpg" alt="">
-                <div class="overlay">
-                    <h2>4 игрока</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/Arizona Sunshine.jpg" alt="">
+                    <div class="overlay">
+                        <h2>4 игрока</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/EVEREST VR™.jpg" alt="">
-                <div class="overlay">
-                    <h2>Hover effect 1</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/EVEREST VR™.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Hover effect 1</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/Gun Club VR.jpg" alt="">
-                <div class="overlay">
-                    <h2>Hover effect 1</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/Gun Club VR.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Hover effect 1</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/Raw Data.jpg" alt="">
-                <div class="overlay">
-                    <h2>Hover effect 1</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/Raw Data.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Hover effect 1</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/BadRobots VR.jpg" alt="">
-                <div class="overlay">
-                    <h2>Hover effect 1</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/BadRobots VR.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Hover effect 1</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/Skyrim VR.jpg" alt="">
-                <div class="overlay">
-                    <h2>Hover effect 1</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/Skyrim VR.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Hover effect 1</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/V-Racer Hoverbike.jpg" alt="">
-                <div class="overlay">
-                    <h2>Hover effect 1</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/V-Racer Hoverbike.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Hover effect 1</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
-            <div class="hovereffect">
-                <img class="img-responsive" src="img/games/2MD VR Football.jpg" alt="">
-                <div class="overlay">
-                    <h2>Hover effect 1</h2>
-                    <a class="info" href="#">link here</a>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="img/games/2MD VR Football.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Hover effect 1</h2>
+                        <a class="info" href="#">link here</a>
+                    </div>
                 </div>
             </div>
+
+
+            <!--		    <div class="row">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+                                <hr class="line purple">
+                                <h3>App Feature One Here</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut est facilisis, eu elementum mi volutpat. Pellentesque ac tristique nisi.</p>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.8s">
+                                <hr  class="line blue">
+                                <h3>App Feature One Here</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut est facilisis, eu elementum mi volutpat. Pellentesque ac tristique nisi.</p>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s">
+                                <hr  class="line yellow">
+                                <h3>App Feature One Here</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut est facilisis, eu elementum mi volutpat. Pellentesque ac tristique nisi.</p>
+                            </div>
+                        </div>-->
         </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s">
 
-
-        <!--		    <div class="row">
-                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
-                            <hr class="line purple">
-                            <h3>App Feature One Here</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut est facilisis, eu elementum mi volutpat. Pellentesque ac tristique nisi.</p>
-                        </div>
-                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.8s">
-                            <hr  class="line blue">
-                            <h3>App Feature One Here</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut est facilisis, eu elementum mi volutpat. Pellentesque ac tristique nisi.</p>
-                        </div>
-                        <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s">
-                            <hr  class="line yellow">
-                            <h3>App Feature One Here</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut est facilisis, eu elementum mi volutpat. Pellentesque ac tristique nisi.</p>
-                        </div>
-                    </div>-->
-    </div>
-    <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s">
-
-            <p class="lead graytext">Смотреть все</p>
+                <p class="lead graytext">Смотреть все</p>
+            </div>
         </div>
-    </div>
 </section>
 
 
 <!--Pricing-->
-<section id="pricing" class="pad-lg">
+<section id="price-anchor" class="pad-lg pricing-section">
     <div class="container">
         <div class="row margin-40">
             <div class="col-sm-8 col-sm-offset-2 text-center">
@@ -362,7 +360,7 @@
 </section>
 
 
-<section id="invite" class="pad-lg light-gray-bg">
+<section id="contact-anchor" class="pad-lg light-gray-bg">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
