@@ -394,6 +394,16 @@ a:hover, a:focus {
     background-size: cover;
 }
 
+#main-page-background {
+    background: url(../img/htc-vive-promo-dive_2.jpg) #231f20 no-repeat center center fixed;
+    min-height: 750px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 hr.line {
     width: 100%;
     border: 2px solid;

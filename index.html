@@ -13,6 +13,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-122301153-1');
+
     </script>
 
     <meta charset="utf-8">
@@ -42,6 +43,8 @@
     <link rel="stylesheet" href="css/slider/hover.css">
 
     <script src="js/modernizr-2.7.1.js"></script>
+    <script src="js/device.js"></script>
+
 
 </head>
 
@@ -51,6 +54,12 @@
     <source src="video/Header_Video_1.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
+
+<section id="main-page-background" >
+
+</section>
+
+
 
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-header">
@@ -81,7 +90,7 @@
             </a>
         </div>
         <div class="col-xs-6 signin text-right navbar-nav">
-            <a href="#price-anchor"class="scroll">Аренда</a>&nbsp; &nbsp;<a href="#games-anchor">Игры</a> <a
+            <a href="#price-anchor" class="scroll">Аренда</a>&nbsp; &nbsp;<a href="#games-anchor">Игры</a> <a
                 href="#">Мероприятия</a> <a href="#">Контакты</a>
         </div>
     </div>
@@ -451,6 +460,19 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
+<script>
+
+    let x = document.getElementById("video");
+    let y = document.getElementById("main-page-background");
+    if (device.desktop() || device.tablet()) {
+        x.style.display = "block";
+        y.style.display = "none";
+    } else {
+        console.log(x)
+        x.style.display = "none";
+        y.style.display = "block";
+    }
+</script>
 
 </body>
 </html>
