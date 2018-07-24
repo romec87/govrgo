@@ -46,6 +46,7 @@
     <script src="js/device.js"></script>
 
 
+
 </head>
 
 <body>
@@ -185,16 +186,44 @@
     </div>
 </section>
 
-<section id="games-anchor" class="pad-xl">
-    <div class="container">
+<section id="games-anchor" class="pad-xl" style="background-color:rgba(0,0,0,0.5);">
+
+
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s">
+                <div class="col-sm-6 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s">
                     <h2 class="graytext">Игры VR</h2>
                     <p class="lead graytext">Выбирайте свой мир</p>
                 </div>
+
+                <div class="custom-select col-sm-3">
+                    <select>
+                        <option value="0">По Жанрам:</option>
+                        <option value="1">Все</option>
+                        <option value="1">Квест</option>
+                        <option value="2">Гонки</option>
+                        <option value="3">Стратегии</option>
+                        <option value="4">Экшен</option>
+                        <option value="5">Аркада</option>
+                    </select>
+                </div>
+
+                <div class="custom-select col-sm-3">
+                    <select>
+                        <option value="0">По Возрасту:</option>
+                        <option value="1">0-90</option>
+                        <option value="1">+6</option>
+                        <option value="2">+8</option>
+                        <option value="3">+12</option>
+                        <option value="4">+16</option>
+                        <option value="5">+18</option>
+                    </select>
+                </div>
+
             </div>
+
+
 
 
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 5px;">
@@ -505,6 +534,7 @@
 <script src="js/wow.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/select.js"></script>
 
 <!--<script>
 
@@ -519,6 +549,8 @@
         y.style.display = "block";
     }
 </script>-->
+
+
 
 </body>
 </html>
