@@ -424,7 +424,7 @@ hr.line {
     color: #fdc05d;
 }
 
-.iphone {
+/*.iphone {
     position: relative;
     height: 200px;
 }
@@ -436,7 +436,17 @@ hr.line {
     right: 0;
     width: 100%;
     max-width: 440px;
+}*/
+
+#img-htc-vive img {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 240px;
 }
+
 
 #invite {
     background: #f2f2f2;
