@@ -390,7 +390,7 @@ a:hover, a:focus {
 }
 
 #be-the-first {
-    background: url(../img/be-the-first-bg2.png) #231f20 no-repeat center center fixed;
+    background: url(../img/be-the-first-bg2.png) #231f20 no-repeat center center;
     min-height: 300px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
