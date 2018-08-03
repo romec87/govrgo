@@ -1,6 +1,7 @@
 .floatclass {
     float: left;
 }
+
 .govrgologo {
     color: white;
     font-size: 200%;
@@ -11,40 +12,42 @@
     font-size: 200%;
 }
 
-
-
-.clear-left-border{
+.clear-left-border {
     margin-left: 0px;
     width: 100%;
     padding-left: 0px;
 }
 
-
-
-
 /* Default to hide the video on all devices */
-#video{display:none}
+#video {
+    display: none
+}
 
 /* Default to display the image on all devices */
-#videosubstitute{display:block;width:auto;height:100%;}
+#videosubstitute {
+    display: block;
+    width: auto;
+    height: 100%;
+}
 
 /*html, body {
     height: 100%;
     margin: 0;
 }*/
-#fullScreenDiv{
-    width:100%;
+#fullScreenDiv {
+    width: 100%;
     min-height: 100%;
     /* Set the height to match that of the viewport. */
 
     width: auto;
-    padding:0!important;
-    margin: 0!important;
+    padding: 0 !important;
+    margin: 0 !important;
     background-color: gray;
     position: relative;
     overflow: hidden;
 }
-#video{
+
+#video {
     width: 100vw;
     height: auto;
     object-fit: cover;
@@ -53,22 +56,24 @@
     z-index: 1;
 }
 
-#videoDiv{
-    position:absolute;
-    background-color: rgba(0 ,0 ,0 ,0.5);
+#videoDiv {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
 }
 
 @media (min-aspect-ratio: 16/9) {
-    #video{
+    #video {
         height: 150%;
         top: -100%;
     }
-    #videosubstitute{
-        display:block;
+
+    #videosubstitute {
+        display: block;
         width: 100vw;
-        height: 100vh;}
+        height: 100vh;
+    }
 }
 
 @media (max-aspect-ratio: 16/9) {
@@ -76,37 +81,47 @@
         width: 150%;
         left: -100%;
     }
-    #videosubstitute{display:block;width:100vw;height:100vh;}
+
+    #videosubstitute {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+    }
 }
+
 /*if there is 992  pixels or more, then display the video but hide the image*/
-@media only screen and (min-width : 768px) {
-    #video{display:block;}
-    #videosubstitute{display:none}
+@media only screen and (min-width: 768px) {
+    #video {
+        display: block;
+    }
+
+    #videosubstitute {
+        display: none
+    }
 }
 
 /* The container for our text and stuff */
-#messageBox{
-    position: absolute;  top: 0;  left: 0;
+#messageBox {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height:100%;
+    height: 100%;
 }
-
-
-
 
 .contentt2 {
     display: none
 }
 
-.clearmargin{
-    margin :0px;
+.clearmargin {
+    margin: 0px;
     padding: 0px;
 }
 
-.min-width-100{
+.min-width-100 {
     min-width: 100%;
 }
 
@@ -115,7 +130,7 @@
 }
 
 .btn-1 {
-    background-image: linear-gradient(to right, rgba(246,211,101,1), rgba(246,211,101,1));
+    background-image: linear-gradient(to right, rgba(246, 211, 101, 1), rgba(246, 211, 101, 1));
 }
 
 .container-how-to {
@@ -125,8 +140,173 @@
 
 .centered-text-how-to-1 {
     position: absolute;
-    top: 50px;
-    margin: 40px;
+    top: 15%;
+    margin: 10%;
+}
 
+.centered-text-how-to-2 {
+    position: absolute;
+    bottom: 15%;
+    margin: 10%;
+    text-align: center;
+}
+
+.centered-text-how-to-3-1 {
+    position: absolute;
+    top: 2%;
+    margin: 10%;
+    text-align: center;
+}
+
+.centered-text-how-to-3-2 {
+    position: absolute;
+    top: 30%;
+    margin: 10%;
+    text-align: center;
+}
+
+.centered-text-how-to-4 {
+    position: absolute;
+    bottom: 30%;
+    margin-left: 35%;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+
+    .centered-text-how-to-size-font {
+        font-size: 1.4em;
+    }
 
 }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .centered-text-how-to-size-font {
+        font-size: 0.7em;
+    }
+
+}
+
+/*modal dialog*/
+
+@media (max-width: 767px) {
+    .md-modal {
+        min-width: 100% !important;
+        top: 53% !important;
+    }
+}
+
+.md-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 430px;
+    min-width: 320px;
+    height: auto;
+    z-index: 2000;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.md-effect-1 .md-content {
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.md-content {
+    color: rgb(255, 255, 255);
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    margin: 0px auto;
+    padding: 1%;
+}
+
+.form {
+    text-align: center;
+    position: relative;
+    margin: 50px auto;
+}
+
+.md-show {
+    visibility: visible;
+}
+
+.md-content button {
+    display: block;
+    font-size: 0.8em;
+    margin: 0px auto;
+    outline: none;
+}
+
+.md-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.md-show.md-effect-1 .md-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.md-effect-1 .md-content {
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.form input {
+    width: 75%;
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border-style: none none solid;
+    border-image: initial;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.49);
+    margin: 7px 0px;
+    padding: 15px;
+    font-size: 1.7em;
+}
+
+.md-content h3 {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 0px;
+    padding: 0.4em;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px 3px 0px 0px;
+    color: white;
+}
+
+/*!* Desktops and laptops ----------- *!
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+!* Large screens ----------- *!
+@media (min-width: 1200px) and (max-width: 3000px) {
+
+}*/
+
+/* Put your CSS code in the left column, instead of example, to put or remove unnecessary prefixes. */

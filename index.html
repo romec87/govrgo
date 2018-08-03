@@ -63,7 +63,7 @@
             <span class="icon-bar"></span>
         </button>
         <a class="logo" href="index.html">
-<!--            <div class="govrgologo">govrgo.ru</div>-->
+            <!--            <div class="govrgologo">govrgo.ru</div>-->
             <img src="img/logo/goVRgo.png" class="img-responsive" style="max-width: 80px; margin-left: 50px">
         </a>
     </div>
@@ -93,7 +93,7 @@
             <div class="col-xs-6">
                 <a class="logo" href="index.html">
                     <div class="govrgologo">govrgo.ru</div>
-<!--                    <img src="img/logo/goVRgo.png" class="img-responsive" style="max-width: 80px; margin-left: 50px">-->
+                    <!--                    <img src="img/logo/goVRgo.png" class="img-responsive" style="max-width: 80px; margin-left: 50px">-->
                 </a>
             </div>
             <div class="col-xs-6 signin text-right navbar-nav">
@@ -147,23 +147,36 @@
             <div class="col-sm-3 pricing-container wow fadeInUp" data-wow-delay="0.5s">
                 <div class="container-how-to ">
                     <img src="img/howto/slide_1.png" class="img-responsive min-width-100">
-                    <div class="centered-text-how-to-1">Чтобы арендовать VR оставьте заявку на сайте или свяжитесь с нами любым удобным способом</div>
+                    <div class="centered-text-how-to-1 centered-text-how-to-size-font">Чтобы арендовать VR оставьте
+                        заявку на сайте или свяжитесь с
+                        нами любым удобным способом
+                    </div>
                 </div>
 
             </div>
 
             <div class="col-sm-3 pricing-container wow fadeInUp clearfix" data-wow-delay="1s">
                 <img src="img/howto/slide_2.png" class="img-responsive min-width-100">
+                <div class="centered-text-how-to-2 centered-text-how-to-size-font">Мы перезвоним в течении 5 минут,
+                    чтобы уточнить детали
+                </div>
             </div>
 
             <div class="col-sm-3 pricing-container wow fadeInUp clearfix" data-wow-delay="1.5s">
                 <img src="img/howto/slide_3.png" class="img-responsive min-width-100">
+                <div class="centered-text-how-to-3-1 centered-text-how-to-size-font">Мы сами привезем виртуальную
+                    реальность в нужное время и нужное место
+                </div>
+                <div class="centered-text-how-to-3-2 centered-text-how-to-size-font">А наш сотрудник позаботиться о том
+                    чтобы все было готово к веселью
+                </div>
             </div>
 
-            <div class="col-sm-3 pricing-container wow fadeInUp clearfix" data-wow-delay="1.5s">
+            <div class="col-sm-3 pricing-container wow fadeInUp clearfix" data-wow-delay="2s">
                 <img src="img/howto/slide_4.png" class="img-responsive min-width-100">
+                <div class="centered-text-how-to-4 centered-text-how-to-size-font">Party time!
+                </div>
             </div>
-
         </div>
     </div>
     <!--
@@ -428,7 +441,9 @@
 
 
         <div class="row" style="margin: 20px">
-                <div class="btn btn-primary col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3" >Все игры</div>
+            <div class="btn btn-primary col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3">
+                Все игры
+            </div>
         </div>
 
     </div>
@@ -462,7 +477,7 @@
                     <li class="info">Подойдет для кооператива, играйте в команде или против друг друга</li>
                     <li class="features first">3 часа игры</li>
                     <li class="features">2 VR шлема HTC Vive</li>
-                    <li class="features last btn btn-secondary btn-wide"><a href="#">Купить за 23999 руб.</a></li>
+                    <li id="idBokkingButton1" class="features last btn btn-secondary btn-wide"><a href="javascript:void(0);">Купить за 23999 руб.</a></li>
                 </ul>
             </div>
 
@@ -477,7 +492,7 @@
                     <li class="info">Отлично подойдет для любого праздника в небольшой компании</li>
                     <li class="features first">3 часа игры</li>
                     <li class="features">1 VR шлем HTC Vive</li>
-                    <li class="features last btn btn-secondary btn-wide"><a href="#">Купить за 12999 руб.</a></li>
+                    <li id="idBokkingButton2" class="features last btn btn-secondary btn-wide"><a href="javascript:void(0);">Купить за 12999 руб.</a></li>
                 </ul>
             </div>
 
@@ -494,7 +509,7 @@
                     </li>
                     <li class="features first">3 часа иргы</li>
                     <li class="features">3 VR шлема HTC Vive</li>
-                    <li class="features last btn btn-secondary btn-wide"><a href="#">Купить за 29999 руб.</a></li>
+                    <li id="idBokkingButton3"  class="features last btn btn-secondary btn-wide"><a href="javascript:void(0);">Купить за 29999 руб.</a></li>
                 </ul>
             </div>
 
@@ -575,15 +590,31 @@
                 </ul>
             </div>
 
-            <div class="col-sm-4 text-right">
-                <p>
-                    <small>Copyright &copy; 2018. All rights reserved. <br>
-                </p>
-            </div>
         </div>
 
     </div>
 </footer>
+
+<!--модальный диалог-->
+
+
+<div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-content">
+        <h3>Забронировать VR</h3>
+        <div class="form">
+            <form method="POST" action="#" enctype="multipart/form-data" name="addcom" id="addcom"
+                  onsubmit="return false">
+                <h5 class="text-center white g" style="margin: 5px;">Оставьте заявку и мы перезвоним вам в течение 10
+                    минут</h5>
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="phoneNumber" placeholder="+7(___)___-__-__">
+                <br><br>
+                <button id="butt" class="btn btn-primary btn-sm">Забронировать</button>
+            </form>
+        </div>
+        <button id="idBokkingButtonClose" class="md-close" onclick=><span class="glyphicon glyphicon-remove"></span></button>
+    </div>
+</div>
 
 
 <!-- Javascript
@@ -595,6 +626,29 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/select.js"></script>
+<script src="js/maskphone.js"></script>
+
+
+<script>
+
+    $('#idBokkingButton1').add('#idBokkingButton2').add('#idBokkingButton3').on('click', function (e) {
+        var targetDiv = document.getElementById("modal-1").classList.add('md-show');
+    })
+    $('#idBokkingButtonClose').on('click', function (e) {
+        var targetDiv = document.getElementById("modal-1").classList.remove("md-show");
+    })
+
+
+
+/*    var ModalEffects = function sendBooking() {
+
+        var targetDiv = document.getElementById("modal-1")
+            //.classList.add('md-show');
+        targetDiv.classList.remove("md-show");
+
+
+    }();*/
+</script>
 
 <!--<script>
 
