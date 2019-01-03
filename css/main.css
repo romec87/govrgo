@@ -34,6 +34,14 @@ h2 {
     font-weight: 700;
 }
 
+h3_1 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
 h3 {
     font-size: 16px;
     line-height: 30px;
@@ -126,7 +134,7 @@ a:hover, a:focus {
 }
 
 .btn-primary {
-    background-color: #F4C745; /*#70cbce;*/
+    background-color: #7AC64D; /*#70cbce;*/
     color: #ffffff;
 }
 
@@ -139,9 +147,97 @@ a:hover, a:focus {
     transition: all 0.35s ease-in-out;
 }
 
+
+
+.btn-all-games {
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #00FF99;
+    max-width: 100px;
+    font-size: 10px;
+}
+
+.btn-all-games:hover, .btn-all-games:focus, .btn-all-games:active, .btn-all-games.active {
+    background-color: #8be2e5;
+    color: #ffffff;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+
+
+.btn_1 {
+    /*    background-color: #7AC64D; !*#70cbce;*!*/
+    background-image: linear-gradient(135deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+    border: none;
+    border-radius: 8px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #003300;
+}
+
+.btn_1:hover, .btn_1:focus, .btn_1:active, .btn_1.active {
+    background-color: rgba(0, 255, 153, 1);
+    color: #ffffff;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.btn_game{
+    background: -webkit-linear-gradient(315deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+    background: -moz-linear-gradient(135deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+    background: linear-gradient(135deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+    border: none;
+    border-radius: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 10px;
+    color: #003300;
+}
+
+.btn_game:hover, .btn_game:focus, .btn_game:active, .btn_game.active {
+    background-color: rgba(0, 255, 153, 1);
+    color: #ffffff;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+
+.btn_2 {
+    background-color: rgba(51, 51, 51, 1);
+    width: 160px;
+    border: none;
+    border-radius: 8px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #FFFFFF;
+}
+
+.btn_2:hover, .btn_2:focus, .btn_2:active, .btn_2.active {
+    background-color: rgba(0, 255, 153, 1);
+    color: #ffffff;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+
+
 .btn-secondary {
-    background-color: #ffffff;
-    color: #231f20;
+    background-color: #231f20;
+    color:  #ffffff;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active {
@@ -209,7 +305,7 @@ a:hover, a:focus {
 }
 
 .blue {
-    color: #F4C745; /*#70cbce;*/
+    color: #00ff1b; /*#70cbce;*/
 }
 
 .white {
@@ -221,7 +317,7 @@ a:hover, a:focus {
 }
 
 .blue-bg {
-    background: #F4C745; /*#70cbce;*/
+    background: #00ff1b; /*#70cbce;*/
 }
 
 .white-bg {
@@ -238,7 +334,7 @@ a:hover, a:focus {
 
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background: rgba(244, 199, 69, 0.9); /*#F4C745; *//*#70cbce;*/
+    background: #7AC64D;/*rgba(244, 199, 69, 0.9);*/ /*#00ff1b; *//*#70cbce;*/
     margin: auto;
     min-height: 60px;
     padding-top: 8px;
@@ -252,13 +348,13 @@ a:hover, a:focus {
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-nav a {
-    color: #ffffff;
+    color: #000000;
     font-size: 14px;
     letter-spacing: 1px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #ffffff;
+    color: #000000;
     opacity: 0.6;
 }
 
@@ -302,7 +398,9 @@ a:hover, a:focus {
     left: 0;
     right: 0;
     margin-left: 0px;
-    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 1);
+    height: 80px;
+/*    margin-bottom: 12%;*/
 }
 
 .middle-info {
@@ -370,12 +468,12 @@ a:hover, a:focus {
 }
 
 .pad-xl {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 50px 0px 50px;
 }
 
-#be-the-first {
-    padding: 50px 0px 30% 0px;
-}
+/*#be-the-first {
+    padding: 50px 0px 10% 0px;
+}*/
 
 .pad-lg {
     padding: 160px 0px;
@@ -389,13 +487,15 @@ a:hover, a:focus {
     padding: 30px 0px;
 }
 
-#be-the-first {
-    background: url(../img/be-the-first-bg2.png) #231f20 no-repeat center center;
+.section-common {
+    background-color: rgba(51, 51, 51, 1);
     min-height: 300px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #main-page-background {
@@ -418,8 +518,8 @@ hr.line {
 }
 
 .blue {
-    border-color: #F4C745; /*#70cbce*/;
-    color: #F4C745; /*#70cbce*/
+    border-color: #00ff1b; /*#70cbce*/;
+    color: #00ff1b; /*#70cbce*/
 }
 
 .yellow {
@@ -490,7 +590,7 @@ footer {
 /*---------------Pricing Tables-------------------*/
 
 .pricing-section {
-    background: #F4C745; /*#70cbce;*/
+    background: #7AC64D; /*#70cbce;*/
 }
 
 .pricing-container {
@@ -588,7 +688,7 @@ footer {
 }
 
 .features.last a {
-    color: #F4C745; /*#70cbce;*/
+    color: #00ff1b; /*#70cbce;*/
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -654,27 +754,23 @@ footer {
         letter-spacing: 0px;
     }
 
-    #be-the-first {
-        background-attachment: scroll;
-    }
-
 }
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
 
-    #be-the-first {
+/*    #be-the-first {
         background-attachment: scroll;
-    }
+    }*/
 
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 991px) {
 
-    #be-the-first {
+/*    #be-the-first {
         background-attachment: scroll;
-    }
+    }*/
 
 }
 
@@ -742,4 +838,9 @@ footer {
 }
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.border-bottom-line{
+    border-bottom: 1px dotted #7AC64D;;
+    margin-bottom: 15px;
 }

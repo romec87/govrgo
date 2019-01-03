@@ -37,18 +37,16 @@
 #fullScreenDiv {
     width: 100%;
     min-height: 100%;
-    /* Set the height to match that of the viewport. */
-
     width: auto;
     padding: 0 !important;
-    margin: 0 !important;
+    margin: 50px 50px 0px 50px !important;
     background-color: gray;
     position: relative;
     overflow: hidden;
 }
 
 #video {
-    width: 100vw;
+    width: 100%;
     height: auto;
     object-fit: cover;
     left: 0px;
@@ -63,7 +61,7 @@
     height: 100%;
 }
 
-@media (min-aspect-ratio: 16/9) {
+/*@media (min-aspect-ratio: 16/9) {
     #video {
         height: 150%;
         top: -100%;
@@ -74,12 +72,12 @@
         width: 100vw;
         height: 100vh;
     }
-}
+}*/
 
-@media (max-aspect-ratio: 16/9) {
+/*@media (max-aspect-ratio: 16/9) {
     #video {
-        width: 150%;
-        left: -100%;
+        width: 100%;
+        height: 100%;
     }
 
     #videosubstitute {
@@ -87,18 +85,8 @@
         width: 100vw;
         height: 100vh;
     }
-}
+}*/
 
-/*if there is 992  pixels or more, then display the video but hide the image*/
-@media only screen and (min-width: 768px) {
-    #video {
-        display: block;
-    }
-
-    #videosubstitute {
-        display: none
-    }
-}
 
 /* The container for our text and stuff */
 #messageBox {
@@ -119,6 +107,31 @@
 .clearmargin {
     margin: 0px;
     padding: 0px;
+}
+
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+
+.clearmarginonly {
+    margin: 0px;
+}
+
+
+.override-check-box{
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.margin-left-right-100 {
+    margin-left: 50px;
+    margin-right: 50px
 }
 
 .min-width-100 {
@@ -170,32 +183,6 @@
     bottom: 30%;
     margin-left: 35%;
     text-align: center;
-}
-
-@media (max-width: 767px) {
-
-    .centered-text-how-to-size-font {
-        font-size: 1.4em;
-    }
-
-}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 991px) {
-
-    .centered-text-how-to-size-font {
-        font-size: 0.7em;
-    }
-
-}
-
-/*modal dialog*/
-
-@media (max-width: 767px) {
-    .md-modal {
-        min-width: 100% !important;
-        top: 53% !important;
-    }
 }
 
 .md-modal {
@@ -299,6 +286,175 @@
     color: white;
 }
 
+/*fix перекоытие надписи главного меню*/
+.navbar-right {
+    margin-right: 0px;
+}
+
+/*custom buttons*/
+.root-div {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: -webkit-linear-gradient(1deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+    background: -moz-linear-gradient(89deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+    background: linear-gradient(89deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+    border: none;
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+
+.font-1 {
+    font-style: normal;
+    color: rgb(0, 255, 153);
+}
+
+.font-center-heading-1 {
+    font-style: normal;
+    color: rgb(0, 255, 153);
+    text-align: center;
+    font-size: 24px;
+    margin: 25px;
+}
+
+.font-left-game-item-1 {
+    font-style: normal;
+    height: 22px;
+    color: #666666;
+    font-size: 18px;
+    text-align: left;
+    margin: 4px;
+    font-weight: 700;
+}
+
+.font-left-game-descript-1 {
+    font-style: normal;
+    font-size: 12px;
+    color: #666666;
+}
+
+
+.font-center-heading-2 {
+    font-style: normal;
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 12px;
+    margin: 25px;
+}
+
+.font-center-heading-3 {
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+.font-align-left-heading-4 {
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 18px;
+}
+
+.font-align-left-text-4 {
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 12px;
+}
+
+.font-2 {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+
+.font-booking-text {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.font-booking-text-little {
+    font-size: 12px;
+    color: #CCCCCC;
+}
+
+.font-booking-text-little-star {
+    font-size: 8px;
+    color: #FFFFFF;
+
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    width: 100%; /* You can set this width to whatever suits your needs */
+    margin: 0 auto;
+}
+
+.videoWrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.thumbnail-image {
+    position: relative;
+    width:30px;
+    height: 30px;
+}
+
+.caption-text-on-image {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+}
+
+
+.header-first-border-booking {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(121, 121, 121, 1);
+    border-bottom-radius: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.game-item {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.game-wraper-button {
+    margin: 0px;
+    padding: 6px;
+}
+
+.padding-px {
+    padding: 5px;
+}
+
+.padding-game-item-text {
+    padding: 0px;
+    padding-left: 5px;
+}
+
 /*!* Desktops and laptops ----------- *!
 @media (min-width: 992px) and (max-width: 1199px) {
 
@@ -309,4 +465,60 @@
 
 }*/
 
-/* Put your CSS code in the left column, instead of example, to put or remove unnecessary prefixes. */
+
+/*if there is 768  pixels or more, then display the video but hide the image*/
+@media only screen and (min-width: 768px) {
+    #video {
+        display: block;
+    }
+
+    #videosubstitute {
+        display: none
+    }
+
+    .size-img-icon{
+        max-height: 200px;
+    }
+}
+
+/*ipad ipad-pro*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .size-img-icon{
+        max-height: 170px;
+    }
+
+    .centered-text-how-to-size-font {
+        font-size: 0.7em;
+    }
+
+    .fixed-size-image-desctop {
+        max-width: 220px;
+        max-height: 170px;
+    }
+
+    .fixed-size-image-desctop {
+        max-width: 120px;
+        max-height: 90px;
+    }
+
+    .btn_game {
+        font-size: 8px;
+        padding: 8px 0px;
+    }
+}
+
+
+/*mobiles*/
+@media (max-width: 767px) {
+    .md-modal {
+        min-width: 100% !important;
+        top: 53% !important;
+    }
+
+    .centered-text-how-to-size-font {
+        font-size: 1.4em;
+    }
+}
+
+
