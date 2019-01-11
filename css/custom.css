@@ -491,6 +491,16 @@ h3_1 {
     font-weight: 700;
 }
 
+.logo-icon{
+    max-width: 60px;
+    margin: 0px
+}
+
+.vcenter-allign {
+    display: flex;
+    align-items: center;
+}
+
 /*if there is 768  pixels or more, then display the video but hide the image*/
 @media only screen and (min-width: 768px) {
     #video {
@@ -564,7 +574,7 @@ h3_1 {
 
     .p-mobile{
         font-size: 12px!important;
-        line-height: 15px!important;
+        line-height: 17px!important;
     }
 
     .size-img-icon{
@@ -590,6 +600,12 @@ h3_1 {
     h3_1 {
         font-weight: 200;
     }
+
+    .logo-icon-static{
+        margin-left: -20px;
+    }
+
+
 
 }
 

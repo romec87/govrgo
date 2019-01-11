@@ -66,11 +66,15 @@ a {
 
 a:hover, a:focus {
     text-decoration: none;
-    color: #231f20;
+/*    color: #231f20;*/
+    color: white;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #00FF99;
 }
 
 .fa-lg {
@@ -140,7 +144,6 @@ a:hover, a:focus {
 }
 
 
-
 .btn-all-games {
     background-color: #333333;
     color: #ffffff;
@@ -159,7 +162,6 @@ a:hover, a:focus {
     -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
 }
-
 
 
 .btn_1 {
@@ -182,7 +184,7 @@ a:hover, a:focus {
     transition: all 0.35s ease-in-out;
 }
 
-.btn_game{
+.btn_game {
     background: -webkit-linear-gradient(315deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
     background: -moz-linear-gradient(135deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
     background: linear-gradient(135deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
@@ -226,10 +228,9 @@ a:hover, a:focus {
 }
 
 
-
 .btn-secondary {
     background-color: #231f20;
-    color:  #ffffff;
+    color: #ffffff;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active {
@@ -331,7 +332,6 @@ a:hover, a:focus {
     background: linear-gradient(89deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
     margin: auto;
     min-height: 60px;
-    padding-top: 8px;
     position: fixed;
     top: -60px;
     transition: top 0.4s ease 0s;
@@ -366,10 +366,6 @@ a:hover, a:focus {
     border-color: transparent;
 }
 
-.logo img {
-    margin-top: 6px;
-}
-
 /* ==========================================================================
    Main styles
    ========================================================================== */
@@ -393,8 +389,8 @@ a:hover, a:focus {
     right: 0;
     margin-left: 0px;
     background-color: rgba(0, 0, 0, 1);
-    height: 80px;
-/*    margin-bottom: 12%;*/
+    height: 60px;
+    /*    margin-bottom: 12%;*/
 }
 
 
@@ -744,18 +740,18 @@ footer {
 /* Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
 
-/*    #be-the-first {
-        background-attachment: scroll;
-    }*/
+    /*    #be-the-first {
+            background-attachment: scroll;
+        }*/
 
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 991px) {
 
-/*    #be-the-first {
-        background-attachment: scroll;
-    }*/
+    /*    #be-the-first {
+            background-attachment: scroll;
+        }*/
 
 }
 
@@ -775,12 +771,15 @@ footer {
     position: relative;
     font-family: Arial;
 }
+
 .custom-select select {
     display: none; /*hide original SELECT element:*/
 }
+
 .select-selected {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 /*style the arrow inside the select element:*/
 .select-selected:after {
     position: absolute;
@@ -792,13 +791,15 @@ footer {
     border: 6px solid transparent;
     border-color: #fff transparent transparent transparent;
 }
+
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
     border-color: transparent transparent #fff transparent;
     top: 7px;
 }
+
 /*style the items (options), including the selected item:*/
-.select-items div,.select-selected {
+.select-items div, .select-selected {
     color: #ffffff;
     padding: 8px 16px;
     border: 1px solid transparent;
@@ -808,24 +809,27 @@ footer {
     border-radius: 40px 10px;
     margin: 5px;
 }
+
 /*style items (options):*/
 .select-items {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 100%;
     left: 0;
     right: 0;
     z-index: 99;
 }
+
 /*hide the items when the select box is closed:*/
 .select-hide {
     display: none;
 }
+
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.border-bottom-line{
+.border-bottom-line {
     border-bottom: 1px dotted #7AC64D;;
     margin-bottom: 15px;
 }
