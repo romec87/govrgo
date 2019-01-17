@@ -671,11 +671,20 @@ h3_1 {
 
     .close-button-right {
         float: right;
+        background: transparent;
+        border: none;
     }
 
     .navbar{
         margin-left: 0px;
         margin-right: 0px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .btn_2 {
+        background-color: white;
+        color: #333;
     }
 }
 
