@@ -28,6 +28,7 @@
     display: block;
     width: auto;
     height: 100%;
+    width: 100%;
 }
 
 /*html, body {
@@ -124,7 +125,7 @@
 }
 
 
-.override-check-box{
+.override-check-box {
     padding-left: 20px;
     margin-bottom: 15px;
 }
@@ -289,9 +290,9 @@
 /*fix перекоытие надписи главного меню*/
 .navbar-right {
     margin-right: 0px;
+    margin-top: 10px;
 }
 
-/*custom buttons*/
 .root-div {
     border-width: 0px;
     position: absolute;
@@ -308,7 +309,6 @@
     width: 100%;
 }
 
-
 .font-1 {
     font-style: normal;
     color: rgb(0, 255, 153);
@@ -319,7 +319,7 @@
     color: rgb(0, 255, 153);
     text-align: center;
     font-size: 24px;
-    margin: 25px;
+    margin-top: 45px;
 }
 
 .font-left-game-item-1 {
@@ -343,8 +343,9 @@
     font-style: normal;
     color: #CCCCCC;
     text-align: center;
-    font-size: 12px;
-    margin: 25px;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .font-center-heading-3 {
@@ -413,7 +414,7 @@
 
 .thumbnail-image {
     position: relative;
-    width:30px;
+    width: 30px;
     height: 30px;
 }
 
@@ -466,11 +467,10 @@
 }*/
 
 
-.font-header-menu{
+.font-header-menu {
     color: white;
     font-size: 12px;
 }
-
 
 
 .middle-info {
@@ -491,7 +491,7 @@ h3_1 {
     font-weight: 700;
 }
 
-.logo-icon{
+.logo-icon {
     max-width: 60px;
     margin: 0px
 }
@@ -499,6 +499,40 @@ h3_1 {
 .vcenter-allign {
     display: flex;
     align-items: center;
+}
+
+.header-margin-top {
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.margin-left-link {
+    margin-left: 40px;
+}
+
+.p-mobile {
+    margin-top: 10px;
+}
+
+
+.section-border {
+    border-radius: 1px;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #b861c6 0%, #ff2b10 100%);
+    border-image-slice: 1;
+    border-width: 1px;
+}
+
+
+.close-button {
+    display: none;
+}
+
+.navbar{
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /*if there is 768  pixels or more, then display the video but hide the image*/
@@ -511,7 +545,7 @@ h3_1 {
         display: none
     }
 
-    .size-img-icon{
+    .size-img-icon {
         max-height: 200px;
     }
 }
@@ -519,7 +553,7 @@ h3_1 {
 /*ipad ipad-pro*/
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    .size-img-icon{
+    .size-img-icon {
         max-height: 170px;
     }
 
@@ -556,14 +590,15 @@ h3_1 {
     }
 
     .root-div {
-        background: none!important;
+        background: none !important;
     }
-    .section-common{
+
+    .section-common {
         margin: 0px;
     }
 
     #fullScreenDiv {
-        margin: 0px!important;
+        margin: 0px !important;
         max-height: 610px;
     }
 
@@ -572,41 +607,76 @@ h3_1 {
         max-height: 200px;
     }
 
-    .p-mobile{
-        font-size: 12px!important;
-        line-height: 17px!important;
+    .p-mobile {
+        font-size: 12px !important;
+        line-height: 17px !important;
+        margin-top: 10px;
+        margin-left: -25px;
     }
 
-    .size-img-icon{
-        max-width: 120px;
-        max-height: 90px;
+    .size-img-icon {
+        max-width: 270px;
+        max-height: 270px;
     }
 
-    .margin-left-right-100{
-        margin: 10px!important;
+    .size-img-icon-mobile {
+        max-width: 100px;
+        max-height: 100px;
     }
 
-    .p-mobile-heght-font{
+    .margin-left-right-100 {
+        margin: 10px !important;
+    }
+
+    .p-mobile-heght-font {
 
     }
-    .font-align-left-text-4{
+
+    .font-align-left-text-4 {
         font-size: 10px;
     }
 
     .middle-info {
-        margin-bottom: 22%;
+        margin-bottom: 3%;
     }
 
     h3_1 {
         font-weight: 200;
     }
 
-    .logo-icon-static{
+    .logo-icon-static {
         margin-left: -20px;
     }
 
+    .header-margin-top {
+        margin-top: 0px;
+        width: 100%;
+        margin-left: 0px;
+        height: 60px;
+    }
 
+    .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
 
+    .none-visible {
+        display: none;
+    }
+
+    .close-button {
+        max-width: 24px;
+        max-height: 24px;
+        display: block;
+    }
+
+    .close-button-right {
+        float: right;
+    }
+
+    .navbar{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 

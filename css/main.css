@@ -11,11 +11,11 @@
    Global styles
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, .pricing-section {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p, .lead {
-    font-family: 'Raleway', sans-serif;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -64,17 +64,32 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:focus {
+a:focus {
     text-decoration: none;
-/*    color: #231f20;*/
     color: white;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
-    border-radius: 5px;
+    border-radius: 7px;
     border-style: solid;
+    border-width: 2px;
     border-color: #00FF99;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00FF99;
+    padding: 10px;
 }
 
 .fa-lg {
@@ -152,6 +167,7 @@ a:hover, a:focus {
     border-color: #00FF99;
     max-width: 100px;
     font-size: 10px;
+    margin-top: 20px;
 }
 
 .btn-all-games:hover, .btn-all-games:focus, .btn-all-games:active, .btn-all-games.active {
