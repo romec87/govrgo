@@ -307,6 +307,7 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     width: 100%;
+    min-height: 100%;
 }
 
 .font-1 {
@@ -509,7 +510,7 @@ h3_1 {
 }
 
 .margin-left-link {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .p-mobile {
@@ -530,9 +531,17 @@ h3_1 {
     display: none;
 }
 
-.navbar{
+.navbar {
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.margin-bottom-fixed-50 {
+    margin-bottom: 50px;
+}
+
+.margin-left-fixed{
+    margin-left: -3.2%;
 }
 
 /*if there is 768  pixels or more, then display the video but hide the image*/
@@ -575,6 +584,20 @@ h3_1 {
         font-size: 8px;
         padding: 8px 0px;
     }
+
+    .margin-left-link {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    .margin-left-fixed{
+        margin-left: 0px;
+    }
+
 }
 
 
@@ -675,7 +698,7 @@ h3_1 {
         border: none;
     }
 
-    .navbar{
+    .navbar {
         margin-left: 0px;
         margin-right: 0px;
         font-weight: 300;
@@ -685,6 +708,10 @@ h3_1 {
     .btn_2 {
         background-color: white;
         color: #333;
+    }
+
+    .section-common {
+        min-height: 100vh;
     }
 }
 
