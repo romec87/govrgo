@@ -492,6 +492,19 @@
     font-size: 12px;
 }
 
+.contact-relative {
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    right: 0;
+    margin-left: 0px;
+    top: 70px;
+}
+
+.text-contact-relative{
+    color: white;
+    font-size: 16px;
+}
 
 .middle-info {
     position: absolute;
@@ -513,7 +526,14 @@ h3_1 {
 
 .logo-icon {
     max-width: 60px;
-    margin: 0px
+    margin: 0px;
+    position:relative;
+}
+
+.logo-text{
+    position: absolute;
+    top: 20px;
+    left: 50px;
 }
 
 .vcenter-allign {
@@ -551,6 +571,11 @@ h3_1 {
     display: none;
 }
 
+.close-button-right {
+    display: none;
+}
+
+
 .navbar {
     margin-left: 50px;
     margin-right: 50px;
@@ -583,7 +608,18 @@ h3_1 {
     /* reset the text-align */
     text-align: left;
 }
+.navbar-toggle{
+    right: -20px;
+}
+.navbar-inverse .navbar-toggle {
+    right: 5px;
+}
 
+
+.navbar-inverse .navbar-nav > li > a, .navbar-nav a{
+    letter-spacing: 0px;
+    font-size: 12px;
+}
 
 /*if there is 768  pixels or more, then display the video but hide the image*/
 @media only screen and (min-width: 768px) {
@@ -672,10 +708,10 @@ h3_1 {
     }
 
     .p-mobile {
-        font-size: 12px !important;
+        font-size: 14px !important;
         line-height: 17px !important;
         margin-top: 10px;
-        margin-left: -25px;
+        margin-left: -19px;
     }
 
     .size-img-icon {
@@ -737,6 +773,7 @@ h3_1 {
         float: right;
         background: transparent;
         border: none;
+        display: block;
     }
 
     .navbar {
