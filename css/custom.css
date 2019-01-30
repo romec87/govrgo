@@ -492,6 +492,19 @@
     font-size: 12px;
 }
 
+.contact-relative {
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    right: 0;
+    margin-left: 0px;
+    top: 70px;
+}
+
+.text-contact-relative{
+    color: white;
+    font-size: 16px;
+}
 
 .middle-info {
     position: absolute;
@@ -513,7 +526,14 @@ h3_1 {
 
 .logo-icon {
     max-width: 60px;
-    margin: 0px
+    margin: 0px;
+    position:relative;
+}
+
+.logo-text{
+    position: absolute;
+    top: 20px;
+    left: 50px;
 }
 
 .vcenter-allign {
@@ -550,6 +570,11 @@ h3_1 {
 .close-button {
     display: none;
 }
+
+.close-button-right {
+    display: none;
+}
+
 
 .navbar {
     margin-left: 50px;
