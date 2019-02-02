@@ -104,7 +104,7 @@ a {
     outline: none;
 }
 
-a:focus {
+/*a:focus {
     text-decoration: none;
     color: white;
     -webkit-transition: all 0.35s ease-in-out;
@@ -130,7 +130,7 @@ a:hover {
     border-width: 2px;
     border-color: #00FF99;
     padding: 10px;
-}
+}*/
 
 .fa-lg {
     font-size: 1.33333em;
@@ -301,6 +301,10 @@ a:hover {
 /*-----------------Margins------------------*/
 .margin-0 {
     margin-bottom: 0 !important;
+}
+
+.margin-5 {
+    margin-bottom: 5px !important;
 }
 
 .margin-10 {
@@ -883,9 +887,4 @@ footer {
 
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
-}
-
-.border-bottom-line {
-    border-bottom: 1px dotted #7AC64D;;
-    margin-bottom: 15px;
 }
