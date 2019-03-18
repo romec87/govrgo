@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136231376-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136231376-1');
+    </script>
     <title>VR GAMES | ИГРЫ ВИРТУАЛНОЙ РЕАЛНОСТИ | ОБЗОР VR ИГР </title>
 
     <meta charset="utf-8">
@@ -99,7 +110,6 @@
     </div>
 
 
-
     <!--games-->
     <section class="section-common">
         <div class="container-fluid">
@@ -119,301 +129,43 @@
             </div>
 
             <div class="row row-centered">
-                <div class=" col-sm-2 "><p class="font-center-heading-3"><span class="section-border">Для начала</span>
-                </p></div>
-                <div class="col-sm-2 "><p class="font-center-heading-3"><span class="section-border">По жанру</span></p>
-                    <p class="font-games-menu">Экшены</p>
-                    <p class="font-games-menu">Симуляторы</p>
-                    <p class="font-games-menu">Спортивные игры</p>
-                    <p class="font-games-menu">Квесты</p>
-                    <p class="font-games-menu">Шутеры</p>
+                <div class=" col-sm-3 "><p class="font-center-heading-3"><span
+                        class="section-border">По сложности</span></p>
+                    <p class="font-games-menu" onclick="filterGames('level', 'Первый раз')">Первый раз</p>
+                    <p class="font-games-menu " onclick="filterGames('level', 'Бывалый')">Бывалый</p>
+                    <p class="font-games-menu" onclick="filterGames('level', 'Эксперт')">Эксперт</p>
                 </div>
-                <div class="col-sm-2 "><p class="font-center-heading-3"><span class="section-border">По возрасту</span>
+                <div class="col-sm-3 "><p class="font-center-heading-3"><span class="section-border">По жанру</span></p>
+                    <p class="font-games-menu" onclick="filterGames('genre', 'Экшен')">Экшены</p>
+                    <p class="font-games-menu " onclick="filterGames('genre', 'Симулятор')">Симуляторы</p>
+                    <p class="font-games-menu" onclick="filterGames('genre', 'Спорт')">Спортивные игры</p>
+                    <p class="font-games-menu" onclick="filterGames('genre', 'Квест')">Квесты</p>
+                    <p class="font-games-menu" onclick="filterGames('genre', 'Шутер')">Шутеры</p>
+                </div>
+                <div class="col-sm-3 "><p class="font-center-heading-3"><span class="section-border">По возрасту</span>
                 </p>
-                    <p class="font-games-menu">6+</p>
-                    <p class="font-games-menu">10+</p>
-                    <p class="font-games-menu">14+</p>
-                    <p class="font-games-menu">16+</p>
-                    <p class="font-games-menu">18+</p>
+                    <p class="font-games-menu" onclick="filterGames('age', '6+')">6+</p>
+                    <p class="font-games-menu" onclick="filterGames('age', '10+')">10+</p>
+                    <p class="font-games-menu" onclick="filterGames('age', '14+')">14+</p>
+                    <p class="font-games-menu" onclick="filterGames('age', '16+')">16+</p>
+                    <p class="font-games-menu" onclick="filterGames('age', '18+')">18+</p>
                 </div>
-                <div class="col-sm-2 "><p class="font-center-heading-3"><span class="section-border">Одиночные</span>
-                </p></div>
-                <div class="col-sm-4 "><p class="font-center-heading-3"><span class="section-border">Многопользовательские</span>
+                <div class="col-sm-3 "><p class="font-center-heading-3"><span class="section-border">По режиму</span>
                 </p>
-                    <p class="font-games-menu">1 игрок</p>
-                    <p class="font-games-menu">2 игрока+</p>
-                    <p class="font-games-menu">4 игрока</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 padding-px">
-                    <div class="container-fluid clearmargin">
-
-                        <div class="col-sm-6 clearmargin">
-                            <div class="row clearmargin padding-px">
-                                <img src="img/games/Dead Effect 2 VR.jpg" class="img-responsive min-width-100">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 clearmargin">
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">2-4 Игрока</div>
-                                </div>
-                                <div class="col-sm-2 col-xs-1 clearmargin">
-                                    <div class="font-left-game-descript-2">16+</div>
-                                </div>
-                                <div class="col-sm-4 col-xs-3 clearmargin">
-                                    <div class="font-left-game-descript-2">30-60мин.</div>
-                                </div>
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">Жанр: шутер</div>
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="font-left-game-descript-2"> Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.
-                                    Aenean euismod bibendum laoreet.
-                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-6 col-xs-6 game-wraper-button ">
-                                    <a class="btn btn_game btn-sm  btn-xs btn-block">КУПИТЬ БИЛЕТ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 padding-px">
-                    <div class="container-fluid clearmargin">
-
-                        <div class="col-sm-6 clearmargin">
-                            <div class="row clearmargin padding-px">
-                                <img src="img/games/Raw_Data.jpg" class="img-responsive min-width-100">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 clearmargin">
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">2-4 Игрока</div>
-                                </div>
-                                <div class="col-sm-2 col-xs-1 clearmargin">
-                                    <div class="font-left-game-descript-2">16+</div>
-                                </div>
-                                <div class="col-sm-4 col-xs-3 clearmargin">
-                                    <div class="font-left-game-descript-2">30-60мин.</div>
-                                </div>
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">Жанр: шутер</div>
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="font-left-game-descript-2"> Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.
-                                    Aenean euismod bibendum laoreet.
-                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-6 col-xs-6 game-wraper-button ">
-                                    <a class="btn btn_game btn-sm  btn-xs btn-block">КУПИТЬ БИЛЕТ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 padding-px">
-                    <div class="container-fluid clearmargin">
-
-                        <div class="col-sm-6 clearmargin">
-                            <div class="row clearmargin padding-px">
-                                <img src="img/games/Dead Effect 2 VR.jpg" class="img-responsive min-width-100">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 clearmargin">
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">2-4 Игрока</div>
-                                </div>
-                                <div class="col-sm-2 col-xs-1 clearmargin">
-                                    <div class="font-left-game-descript-2">16+</div>
-                                </div>
-                                <div class="col-sm-4 col-xs-3 clearmargin">
-                                    <div class="font-left-game-descript-2">30-60мин.</div>
-                                </div>
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">Жанр: шутер</div>
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="font-left-game-descript-2"> Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.
-                                    Aenean euismod bibendum laoreet.
-                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-6 col-xs-6 game-wraper-button ">
-                                    <a class="btn btn_game btn-sm  btn-xs btn-block">КУПИТЬ БИЛЕТ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 padding-px">
-                    <div class="container-fluid clearmargin">
-
-                        <div class="col-sm-6 clearmargin">
-                            <div class="row clearmargin padding-px">
-                                <img src="img/games/Raw_Data.jpg" class="img-responsive min-width-100">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 clearmargin">
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">2-4 Игрока</div>
-                                </div>
-                                <div class="col-sm-2 col-xs-1 clearmargin">
-                                    <div class="font-left-game-descript-2">16+</div>
-                                </div>
-                                <div class="col-sm-4 col-xs-3 clearmargin">
-                                    <div class="font-left-game-descript-2">30-60мин.</div>
-                                </div>
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">Жанр: шутер</div>
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="font-left-game-descript-2"> Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.
-                                    Aenean euismod bibendum laoreet.
-                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-6 col-xs-6 game-wraper-button ">
-                                    <a class="btn btn_game btn-sm  btn-xs btn-block">КУПИТЬ БИЛЕТ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 padding-px">
-                    <div class="container-fluid clearmargin">
-
-                        <div class="col-sm-6 clearmargin">
-                            <div class="row clearmargin padding-px">
-                                <img src="img/games/Dead Effect 2 VR.jpg" class="img-responsive min-width-100">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 clearmargin">
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">2-4 Игрока</div>
-                                </div>
-                                <div class="col-sm-2 col-xs-1 clearmargin">
-                                    <div class="font-left-game-descript-2">16+</div>
-                                </div>
-                                <div class="col-sm-4 col-xs-3 clearmargin">
-                                    <div class="font-left-game-descript-2">30-60мин.</div>
-                                </div>
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">Жанр: шутер</div>
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="font-left-game-descript-2"> Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.
-                                    Aenean euismod bibendum laoreet.
-                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-6 col-xs-6 game-wraper-button ">
-                                    <a class="btn btn_game btn-sm  btn-xs btn-block">КУПИТЬ БИЛЕТ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 padding-px">
-                    <div class="container-fluid clearmargin">
-
-                        <div class="col-sm-6 clearmargin">
-                            <div class="row clearmargin padding-px">
-                                <img src="img/games/Raw_Data.jpg" class="img-responsive min-width-100">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 clearmargin">
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">2-4 Игрока</div>
-                                </div>
-                                <div class="col-sm-2 col-xs-1 clearmargin">
-                                    <div class="font-left-game-descript-2">16+</div>
-                                </div>
-                                <div class="col-sm-4 col-xs-3 clearmargin">
-                                    <div class="font-left-game-descript-2">30-60мин.</div>
-                                </div>
-                                <div class="col-sm-3 col-xs-4 clearmargin">
-                                    <div class="font-left-game-descript-2">Жанр: шутер</div>
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="font-left-game-descript-2"> Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.
-                                    Aenean euismod bibendum laoreet.
-                                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo...
-                                </div>
-                            </div>
-
-                            <div class="row clearmargin">
-                                <div class="col-sm-6 col-xs-6 game-wraper-button ">
-                                    <a class="btn btn_game btn-sm  btn-xs btn-block">КУПИТЬ БИЛЕТ</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="font-games-menu" onclick="filterGames('gamers', '1 Игрок')">Одиночные</p>
+                    <p class="font-games-menu" onclick="filterGames('gamers', '1-2 Игрока')">1-2 Игрока</p>
+                    <p class="font-games-menu" onclick="filterGames('gamers', '1-4 Игрока')">1-4 Игрока</p>
                 </div>
             </div>
 
+            <div id="filtredGamesId">
+            </div>
 
 
         </div>
 
         <div class="row clearmarginonly">
-            <div class="btn btn-all-games center-block">
+            <div id="buttonElseGameId" class="btn btn-all-games center-block">
                 ЕЩЕ
             </div>
         </div>
@@ -428,6 +180,91 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script>document.getElementById('focusBooking').focus();</script>
+
+    <script>
+        const countOneTickGame = 10;
+        let dataGames = {};
+        getGame = (val) =>
+            "                <div class=\"col-sm-6 padding-px\">\n" +
+            "                    <div class=\"container-fluid clearmargin\">\n" +
+            "                        <div class=\"col-sm-6 clearmargin\">\n" +
+            "                            <div class=\"row clearmargin padding-px\">\n" +
+            "                                <img src=\"" + val.image + "\" class=\"img-responsive min-width-100\">\n" +
+            "                            </div>\n" +
+            "                        </div>\n" +
+            "                        <div class=\"col-sm-6 clearmargin\">\n" +
+            "                    <div class=\"row clearmargin\">\n" +
+            "                            <p class=\"font-center-gamed-name-1\"><span>" + val.name + "</span></p>\n" +
+            "                    </div>" +
+            "                            <div class=\"row clearmargin\">\n" +
+            "                                <div class=\"col-sm-3 col-xs-4 clearmargin\">\n" +
+            "                                    <div class=\"font-left-game-descript-2\">" + val.gamers + " </div>\n" +
+            "                                </div>\n" +
+            "                                <div class=\"col-sm-2 col-xs-1 clearmargin\">\n" +
+            "                                    <div class=\"font-left-game-descript-2\">" + val.age + "</div>\n" +
+            "                                </div>\n" +
+            "                                <div class=\"col-sm-4 col-xs-3 clearmargin\">\n" +
+            "                                    <div class=\"font-left-game-descript-2\">" + val.duration + "</div>\n" +
+            "                                </div>\n" +
+            "                                <div class=\"col-sm-3 col-xs-4 clearmargin\">\n" +
+            "                                    <div class=\"font-left-game-descript-2\">Жанр: " + val.genre + "</div>\n" +
+            "                                </div>\n" +
+            "                            </div>\n" +
+            "                            <div class=\"row clearmargin\">\n" +
+            "                                <div class=\"font-left-game-descript-2\">" + val.description +
+            "                                </div>\n" +
+            "                            </div>\n" +
+            "                            <div class=\"row clearmargin\">\n" +
+            "                                <div class=\"col-sm-6 col-xs-6 game-wraper-button \">\n" +
+            "                                    <a class=\"btn btn_game btn-sm  btn-xs btn-block\">КУПИТЬ БИЛЕТ</a>\n" +
+            "                                </div>\n" +
+            "                            </div>\n" +
+            "                        </div>\n" +
+            "                    </div>\n" +
+            "                </div>\n";
+
+
+        let renderGames = (data) => {
+            document.getElementById('filtredGamesId').innerHTML='';
+            let div = "";
+            div.className = 'row';
+            $.each(data, (i, val) => {
+                if (i & 1) {
+                    div = document.createElement('div');
+                    div.className = 'row'
+                    div.innerHTML += getGame(val)
+
+                    if (Object.keys(data).length == i) {
+                        document.getElementById('filtredGamesId').appendChild(div);
+                    }
+                } else {
+                    div.innerHTML += getGame(val)
+                    document.getElementById('filtredGamesId').appendChild(div);
+                }
+
+            });
+
+        }
+
+        let filterGames = (type, filter) => {
+            let filtredObject = {};
+            const arrayKeys = Object.keys(dataGames).filter((key) => {
+                return dataGames[key][type] == filter;
+            })
+            arrayKeys.forEach((val, item) => {
+                filtredObject[item+1] = dataGames[val];
+            });
+            renderGames(filtredObject);
+        }
+
+        $.getJSON("json/filtergames.json", (data) => {
+            dataGames = data;
+            renderGames(dataGames);
+        })
+
+
+    </script>
+
 
 </div>
 </body>

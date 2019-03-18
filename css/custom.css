@@ -55,6 +55,15 @@
     z-index: 1;
 }
 
+#video-art {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
 #videoDiv {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -321,6 +330,18 @@
     text-align: center;
     font-size: 24px;
     margin-top: 45px;
+}
+
+.font-center-gamed-name-1 {
+    font-style: normal;
+    color:#929496;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.font-margin-bottom {
+    margin-bottom: 35px;
 }
 
 .font-left-game-item-1 {
@@ -699,6 +720,25 @@ h3_1 {
     font-size: 10px;
 }
 
+.header-margin-top a:focus, .header-info a:focus, .header-info a:hover {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00FF99 !important;
+    padding: 10px;
+}
+
+.margin-left-right-50 {
+    margin-left: 50px;
+    margin-right: 50px
+}
+
 /*if there is 768  pixels or more, then display the video but hide the image*/
 @media only screen and (min-width: 768px) {
     #video {
@@ -712,6 +752,19 @@ h3_1 {
     .size-img-icon {
         max-height: 200px;
     }
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+    display: flex;
+    align-items: center;     /* Align the flex-items vertically */
+    justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
 }
 
 /*ipad ipad-pro*/
