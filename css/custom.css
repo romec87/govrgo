@@ -720,6 +720,11 @@ h3_1 {
     font-size: 10px;
 }
 
+
+.min-width-button-160 {
+min-width: 160px;
+}
+
 .header-margin-top a:focus, .header-info a:focus, .header-info a:hover {
     text-decoration: none;
     color: white;
@@ -823,6 +828,11 @@ h3_1 {
     .md-modal {
         min-width: 100% !important;
         top: 53% !important;
+    }
+
+    .text-contact-relative {
+        color: white;
+        font-size: 12px;
     }
 
     .centered-text-how-to-size-font {

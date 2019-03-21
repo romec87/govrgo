@@ -65,14 +65,14 @@
             </button>
             <a class="" href="index.html">
                 <img src="./img/logo/zelenui_cub_logo_black.png" class="img-responsive logo-icon">
-                <div class="logo-text">ЗЕЛЕНЫЙ КУБ</div>
+                <div class="logo-text">ЗЕЛЁНЫЙ КУБ</div>
             </a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#price-anchor" class="scroll">ИГРЫ</a></li>
                 <li><a href="#games-anchor">О ПРОЕКТЕ</a></li>
-                <li><a href="#">ЗАБРОНИРОВАТЬ VR</a></li>
+                <li><a href="arenda-i-meropreyatiya.html">ИГРАТЬ</a></li>
                 <li><a href="#">КОНТАКТЫ</a></li>
                 <li><a href="#">БЛОГ</a></li>
                 <li>
@@ -90,14 +90,13 @@
         </div>
 
         <div class="col-xs-5 col-sm-2 margin-left-fixed">
-            <p class="font-1 p-mobile">ЗЕЛЕНЫЙ КУБ</p>
+            <p class="font-1 p-mobile">ЗЕЛЁНЫЙ КУБ</p>
         </div>
         <div class="col-xs-5  col-sm-9 text-right font-header-menu">
             <a class="margin-left-link none-visible" href="#price-anchor">ИГРЫ</a>&nbsp; &nbsp;<a
                 class="margin-left-link none-visible" href="#games-anchor">О ПРОЕКТЕ</a> <a id="focusBooking"
                                                                                             class="margin-left-link none-visible"
-                                                                                            href="#">ЗАБРОНИРОВАТЬ
-            VR</a> <a class="margin-left-link none-visible" href="#">КОНТАКТЫ</a>
+                                                                                            href="arenda-i-meropreyatiya.html" >ИГРАТЬ</a> <a class="margin-left-link none-visible" href="#">КОНТАКТЫ</a>
             <a class="margin-left-link none-visible" href="#">БЛОГ</a>
 
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -129,13 +128,13 @@
             </div>
 
             <div class="row row-centered">
-                <div class=" col-sm-3 "><p class="font-center-heading-3"><span
+                <div class=" col-sm-2 "><p class="font-center-heading-3"><span
                         class="section-border">По сложности</span></p>
                     <p class="font-games-menu" onclick="filterGames('level', 'Первый раз')">Первый раз</p>
                     <p class="font-games-menu " onclick="filterGames('level', 'Бывалый')">Бывалый</p>
                     <p class="font-games-menu" onclick="filterGames('level', 'Эксперт')">Эксперт</p>
                 </div>
-                <div class="col-sm-3 "><p class="font-center-heading-3"><span class="section-border">По жанру</span></p>
+                <div class="col-sm-2 "><p class="font-center-heading-3"><span class="section-border">По жанру</span></p>
                     <p class="font-games-menu" onclick="filterGames('genre', 'Экшен')">Экшены</p>
                     <p class="font-games-menu " onclick="filterGames('genre', 'Симулятор')">Симуляторы</p>
                     <p class="font-games-menu" onclick="filterGames('genre', 'Спорт')">Спортивные игры</p>
@@ -155,6 +154,10 @@
                     <p class="font-games-menu" onclick="filterGames('gamers', '1 Игрок')">Одиночные</p>
                     <p class="font-games-menu" onclick="filterGames('gamers', '1-2 Игрока')">1-2 Игрока</p>
                     <p class="font-games-menu" onclick="filterGames('gamers', '1-4 Игрока')">1-4 Игрока</p>
+                </div>
+                <div class="col-sm-2 "><p class="font-center-heading-3"><span class="section-border"
+                                                                              onclick="filterGames('Все')">Все</span>
+                </p>
                 </div>
             </div>
 
@@ -225,7 +228,7 @@
 
 
         let renderGames = (data) => {
-            document.getElementById('filtredGamesId').innerHTML='';
+            document.getElementById('filtredGamesId').innerHTML = '';
             let div = "";
             div.className = 'row';
             $.each(data, (i, val) => {
@@ -247,12 +250,17 @@
         }
 
         let filterGames = (type, filter) => {
+
+            if (type == 'Все') {
+                renderGames(dataGames);
+                return;
+            }
             let filtredObject = {};
             const arrayKeys = Object.keys(dataGames).filter((key) => {
                 return dataGames[key][type] == filter;
             })
             arrayKeys.forEach((val, item) => {
-                filtredObject[item+1] = dataGames[val];
+                filtredObject[item + 1] = dataGames[val];
             });
             renderGames(filtredObject);
         }
