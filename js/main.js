@@ -16,8 +16,13 @@ $(document).ready(function(){
     			}
     		}
     	});
-  
-  
+
+
+	$(()=>{
+		$("#header-lv1").load("header-lv1.html");
+		$("#footer").load("footer.html");
+	});
+
   //------------------------------------//
   //Scroll To//
   //------------------------------------//

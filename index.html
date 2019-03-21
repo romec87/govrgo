@@ -5,7 +5,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136231376-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-136231376-1');
@@ -41,37 +45,10 @@
 
 <body>
 
-</section>-->
 <div class="root-div">
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="" href="index.html">
-                <img src="./img/logo/zelenui_cub_logo_black.png" class="img-responsive logo-icon">
-                <div class="logo-text">ЗЕЛЁНЫЙ КУБ</div>
-            </a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#price-anchor" class="scroll">ИГРЫ</a></li>
-                <li><a href="#games-anchor">О ПРОЕКТЕ</a></li>
-                <li><a href="arenda-i-meropreyatiya.html" >ИГРАТЬ</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
-                <li><a href="#">БЛОГ</a></li>
-                <li>
-                    <button class="close-button-right" type="button" data-toggle="collapse"
-                            data-target=".navbar-collapse"><img class="close-button" src="img/close-button.png"/>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div>
 
+    <div id="header-lv1" class="navbar navbar-inverse navbar-fixed-top"></div>
 
     <div id="fullScreenDiv">
         <img src="img/vr-club-green-cube-zelenui-cub.jpg" id="videosubstitute" alt="Full screen background video">
@@ -96,7 +73,8 @@
                     <a class="margin-left-link none-visible" href="#price-anchor">ИГРЫ</a>&nbsp; &nbsp;<a
                         class="margin-left-link none-visible" href="#games-anchor">О ПРОЕКТЕ</a> <a id="focusBooking"
                                                                                                     class="margin-left-link none-visible"
-                                                                                                    href="arenda-i-meropreyatiya.html">ИГРАТЬ</a> <a class="margin-left-link none-visible" href="#">КОНТАКТЫ</a>
+                                                                                                    href="arenda-i-meropreyatiya.html">ИГРАТЬ</a>
+                    <a class="margin-left-link none-visible" href="#">КОНТАКТЫ</a>
                     <a class="margin-left-link none-visible" href="#">БЛОГ</a>
 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -150,7 +128,8 @@
                         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                             <div class="row">
                                 <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
-                                    <a href="arenda-i-meropreyatiya.html" class="btn btn_1 btn-sm scroll min-width-button-160">ИГРАТЬ</a>
+                                    <a href="arenda-i-meropreyatiya.html"
+                                       class="btn btn_1 btn-sm scroll min-width-button-160">ИГРАТЬ</a>
                                 </div>
                                 <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
                                     <a href="#price-anchor" class="btn btn_2 btn-sm scroll">ПОДРОБНЕЕ</a>
@@ -169,7 +148,7 @@
 
     <!--about us-->
     <section class="section-common">
-        <div class="container" style="width:100%; height:100%">
+        <div class="container">
 
             <div class="row header-first-border">
                 <!--нижняя рамка-->
@@ -240,7 +219,8 @@
                     <img src="./img/slide3.PNG" onclick="redirectTo('./vr-cinema.html')"
                          class="fixed-size-image-desctop img-responsive center-block size-img-icon">
                     <div class="row">
-                        <p class="font-center-heading-3" onclick="redirectTo('./vr-cinema.html')"><span>VR кинотеатр</span>
+                        <p class="font-center-heading-3" onclick="redirectTo('./vr-cinema.html')">
+                            <span>VR кинотеатр</span>
                         </p>
                     </div>
                 </div>
@@ -283,7 +263,8 @@
                 <div class="col-sm-3 padding-px">
                     <div class="container-fluid game-item clearmargin">
                         <div class="row clearmargin padding-px">
-                            <img src="img/games/Dead Effect 2 VR.jpg" class="img-responsive min-width-100" onclick="redirectTo('./games/test.html')">
+                            <img src="img/games/Dead Effect 2 VR.jpg" class="img-responsive min-width-100"
+                                 onclick="redirectTo('./games/test.html')">
                         </div>
                         <div class="row clearmargin">
                             <div class="col-sm-6 col-xs-6">
@@ -723,236 +704,6 @@
         </div>
     </section>
 
-    <!--
-        <section class="section-common">
-            <div class="container" style="width:100%; height:100%">
-
-                <div class="row header-first-border">
-                    &lt;!&ndash;нижняя рамка&ndash;&gt;
-                </div>
-
-                <div class="row">
-                    <p class="font-center-heading-1"><span>Бронирование  VR</span>
-                    </p>
-                </div>
-
-                <div class="row">
-                    <p class="font-center-heading-2"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</span>
-                    </p>
-                    </p>
-                </div>
-                <div class="row margin-left-right-100">
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm-1">
-                                <div class="thumbnail-image text-center">
-                                    <img class="img-responsive" src="img/booking-cube.png">
-                                    <div class="caption-text-on-image">
-                                        <p>1</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-11">
-                                <p class="font-booking-text">Количество игроков</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm-1">
-                                <div class="thumbnail-image text-center">
-                                    <img class="img-responsive" src="img/booking-cube.png">
-                                    <div class="caption-text-on-image">
-                                        <p>2</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-11">
-                                <p class="font-booking-text left">Совмещенная реальность</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row margin-left-right-100">
-                    <div class="header-first-border-booking"></div>
-                </div>
-
-                <div class="row margin-left-right-100">
-                    <div class="col-sm-6">
-                        <p class="font-booking-text-little"><span>Какой командой&nbsp;&nbsp; вы планируете играть?</span>
-                        </p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="font-booking-text-little"><span>Отметьте игроков, которые хотят получить видеозапись своей игры в VR</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row margin-left-right-100">
-                    <div class="col-sm-6">
-                        <div class="row clearmargin">
-                            <div class="col-sm-1 clearmargin"><img class="img-responsive" src="img/people.png"></div>
-                            <div class="col-sm-1 clearmargin"><img class="img-responsive" src="img/people.png"></div>
-                            <div class="col-sm-1 clearmargin"><img class="img-responsive" src="img/people.png"></div>
-                            <div class="col-sm-1 clearmargin"><img class="img-responsive" src="img/people.png"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row clearmargin">
-                            <div class="col-sm-1 clearmargin"><img class="img-responsive" src="img/people.png"></div>
-                            <div class="col-sm-1 clearmargin"><img class="img-responsive" src="img/people.png"></div>
-                            <div class="col-sm-1 clearmargin"><img class="img-responsive" src="img/people.png"></div>
-                            <div class="col-sm-1 clearmargin"><img class="img-responsive" src="img/people.png"></div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                    </div>
-                    <div class="col-sm-6">
-                        <label class="checkbox-inline override-check-box"><input type="checkbox" value=""></label>
-                        <label class="checkbox-inline override-check-box"><input type="checkbox" value=""></label>
-                        <label class="checkbox-inline override-check-box"><input type="checkbox" value=""></label>
-                        <label class="checkbox-inline override-check-box"><input type="checkbox" value=""></label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="font-booking-text-little-star">300p</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="font-booking-text-little-star">* Если Вы еще не решили, можете определиться на месте в
-                            день посещения</p>
-                    </div>
-                </div>
-
-                <div class="row margin-left-right-100">
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm-1">
-                                <div class="thumbnail-image text-center">
-                                    <img class="img-responsive" src="img/booking-cube.png">
-                                    <div class="caption-text-on-image">
-                                        <p>3</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-11">
-                                <p class="font-booking-text">Время бронирования</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm-1">
-                                <div class="thumbnail-image text-center">
-                                    <img class="img-responsive" src="img/booking-cube.png">
-                                    <div class="caption-text-on-image">
-                                        <p>4</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-11">
-                                <p class="font-booking-text left">Длительность бронирования</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row margin-left-right-100">
-                    <div class="header-first-border-booking"></div>
-                </div>
-
-                <div class="row margin-left-right-100">
-                    <div class="col-sm-6">
-                        <p class="font-booking-text-little">Отметьте ячейки с подходящим в ременем
-                        </p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="font-booking-text-little"><span>Проверьте информацию по вашему бронированию</span>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>-->
-
-
-    <!--    <section id="contact-anchor" class="pad-lg light-gray-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2 text-center">
-                        <i class="fa fa-envelope-o margin-40"></i>
-                        <h2 class="black">Свяжитесь с нами</h2>
-                        <br/>
-                        <p class="black">Или оставьте свои контактыне данные и мы свяжемся с вами.</p>
-                        <br/>
-
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                               placeholder="Enter Email">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-lg">Направить</button>
-                                </form>
-                            </div>
-                        </div>&lt;!&ndash;End Form row&ndash;&gt;
-
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
-    <!--
-        <section id="press" class="pad-sm">
-            <div class="container">
-
-                <div class="row margin-30 news-container">
-                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 wow fadeInLeft" data-wow-delay="0.4s">
-                        <a href="#" target="_blank">
-                            <img class="news-img pull-left" src="img/instagram.jpg" alt="Tech Crunch">
-                            <p class="black">Подписывайтесь на нас в Инстаграмм<br/>
-                                <small><em>Подписчикам скидки</em></small>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row margin-30 news-container">
-                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 wow fadeInLeft" data-wow-delay="0.8s">
-                        <a href="#" target="_blank">
-                            <img class="news-img pull-left" src="img/fb.jpg" alt="Forbes">
-                            <p class="black">Подписывайтесь на нас в Фейсбук
-                                <br/>
-                                <small><em>Подписчикам скидки</em></small>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </section>-->
-
-
     <section class="section-common">
         <div class="container" style="width:100%; height:100%">
 
@@ -1050,24 +801,6 @@
         </div>
     </section>
 
-
-    <!--<footer>
-        <div class="container">
-
-            <div class="row">
-                <div class="col-sm-8 margin-20">
-                    <ul class="list-inline social">
-                        <li>Мы в социальных сетях</li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-    </footer>-->
 
     <!--модальный диалог-->
     <div class="md-modal md-effect-1" id="modal-1">
