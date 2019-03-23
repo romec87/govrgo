@@ -346,9 +346,9 @@
 
 .font-left-game-item-1 {
     font-style: normal;
-    height: 22px;
+    height: 18px;
     color: #666666;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     margin: 4px;
     font-weight: 700;
@@ -725,7 +725,7 @@ h3_1 {
 min-width: 160px;
 }
 
-.header-margin-top a:focus, .header-info a:focus, .header-info a:hover {
+.header-margin-top a:focus, .header-info a:focus, .header-info a:hover, .green-hover-border a:hover {
     text-decoration: none;
     color: white;
     -webkit-transition: all 0.35s ease-in-out;
@@ -742,6 +742,19 @@ min-width: 160px;
 .margin-left-right-50 {
     margin-left: 50px;
     margin-right: 50px
+}
+
+.not-hover-decoration{
+   color: rgb(0, 255, 153);
+}
+.not-hover-decoration a:hover{
+    border: none;
+    color: rgb(0, 255, 153);
+    padding: 0px;
+}
+
+.paddinx-5px{
+    padding: 5px;
 }
 
 /*if there is 768  pixels or more, then display the video but hide the image*/
