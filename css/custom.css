@@ -334,7 +334,7 @@
 
 .font-center-gamed-name-1 {
     font-style: normal;
-    color:#929496;
+    color: #929496;
     text-align: center;
     font-size: 14px;
     margin-top: 5px;
@@ -503,8 +503,8 @@
     padding-left: 5px;
 }
 
-.color-main{
-color: rgb(0, 255, 153);
+.color-main {
+    color: rgb(0, 255, 153);
 }
 
 /*!* Desktops and laptops ----------- *!
@@ -647,12 +647,12 @@ h3_1 {
     border-width: 2px;
 }
 
-.column-in-center{
+.column-in-center {
     float: none;
     margin: 0 auto;
 }
 
-.column-in-center-work{
+.column-in-center-work {
     display: table;
     margin: 0 auto;
 }
@@ -715,14 +715,14 @@ h3_1 {
     height: 128px;
 }
 
-.secrurity-note{
+.secrurity-note {
     text-decoration: underline;
     font-size: 10px;
 }
 
 
 .min-width-button-160 {
-min-width: 160px;
+    min-width: 160px;
 }
 
 .header-margin-top a:focus, .header-info a:focus, .header-info a:hover, .green-hover-border a:hover {
@@ -744,17 +744,180 @@ min-width: 160px;
     margin-right: 50px
 }
 
-.not-hover-decoration{
-   color: rgb(0, 255, 153);
+.not-hover-decoration {
+    color: rgb(0, 255, 153);
 }
-.not-hover-decoration a:hover{
+
+.not-hover-decoration a:hover {
     border: none;
     color: rgb(0, 255, 153);
     padding: 0px;
 }
 
-.paddinx-5px{
+.paddinx-5px {
     padding: 5px;
+}
+
+.paddinx-7px {
+    padding: 7px;
+    font-size: 10px;
+}
+
+
+.text-vr-price {
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+
+.text-vr-under {
+    color: black;
+    font-size: 24px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.text-vr-price-days {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    /*    top: 25%;*/
+    right: 5%;
+    top: 5%;
+}
+
+.text-vr-price-days-45 {
+    color: #009933;
+    font-size: 11px;
+    position: absolute;
+    /*    top: 25%;*/
+    right: 45%;
+    top: 5%;
+}
+
+.text-vr-price-days-15 {
+    color: #009933;
+    font-size: 11px;
+    position: absolute;
+    /*    top: 25%;*/
+    right: 15%;
+    top: 5%;
+}
+
+.text-vr-price-days-15-black {
+    color: black;
+    font-size: 14px;
+    position: absolute;
+    /*    top: 25%;*/
+    right: 15%;
+}
+
+.text-vr-price-days-45-black {
+    color: black;
+    font-size: 14px;
+    position: absolute;
+    /*    top: 25%;*/
+    right: 45%;
+}
+
+.text-vr-price-days-80-black {
+    color: black;
+    font-size: 14px;
+    position: absolute;
+    /*    top: 25%;*/
+    right: 80%;
+    font-weight: bold;
+}
+
+.text-vr-price-btn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 45%;
+}
+
+.text-vr-price-2-3 {
+    color: black;
+    font-size: 14px;
+    position: absolute;
+    right: 30%;
+}
+
+
+.top-30-price-text {
+    top: 30%;
+}
+
+.top-60-price-text {
+    top: 60%;
+}
+
+.top-45-price-text {
+    top: 45%;
+}
+
+.top-20-price-text {
+    top: 20%;
+}
+
+.top-50-price-text {
+    top: 50%;
+}
+
+.top-80-price-text {
+    top: 80%;
+}
+
+#pointer {
+    height: 150px;
+    position: relative;
+    background: -webkit-linear-gradient(1deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+    background: -moz-linear-gradient(89deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+    background: linear-gradient(89deg, rgba(0, 255, 153, 1) 0%, rgba(0, 255, 153, 1) 0%, rgba(0, 153, 51, 1) 100%, rgba(0, 153, 51, 1) 100%);
+}
+
+/*#pointer:before {
+    content: "";
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 75px solid #009933;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    z-index: 100;
+}*/
+
+#pointer2 {
+    height: 150px;
+    position: relative;
+    background: #ebebeb;
+}
+
+#pointer3 {
+    height: 150px;
+    position: relative;
+    background: white;
+}
+
+.margin-1px {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.border-bottom-price-black{
+    border-bottom: 1px solid black;
+}
+.border-bottom-price-ebebeb{
+    border-bottom: 1px solid #ebebeb;
+}
+.border-bottom-price-white{
+    border-bottom: 1px solid white;
 }
 
 /*if there is 768  pixels or more, then display the video but hide the image*/
@@ -780,9 +943,10 @@ min-width: 160px;
 .vertical-align > [class^="col-"],
 .vertical-align > [class*=" col-"] {
     display: flex;
-    align-items: center;     /* Align the flex-items vertically */
-    justify-content: center; /* Optional, to align inner flex-items
-                              horizontally within the column  */
+    align-items: center; /* Align the flex-items vertically */
+    justify-content: center;
+    /* Optional, to align inner flex-items
+                                 horizontally within the column  */
 }
 
 /*ipad ipad-pro*/

@@ -22,9 +22,8 @@ $(document).ready(() => {
     }
 
     $(() => {
-        console.log('1')
 
-        $("#header").load("header.html", () => {
+        $("#header").load("/mrcube/header.html", () => {
             navbarScroll();
 /*            var innerDivs = $("#header").html();*/
             /*            $("#header").remove();
@@ -32,10 +31,9 @@ $(document).ready(() => {
 
         });
 
-        $("#header-lv1").load("header-lv1.html");
-        $("#header-main").load("header-main.html");
-        $("#footer").load("footer.html");
-        console.log('3')
+        $("#header-lv1").load("/mrcube/header-lv1.html");
+        $("#header-main").load("/mrcube/header-main.html");
+        $("#contact-info").load("/mrcube/footer.html");
     });
 
     /*    offsetAnchor = () => {
@@ -74,7 +72,6 @@ $(document).ready(() => {
     );
     wow.init();
     navbarScroll()
-    console.log('2')
 
     $('#idBokkingButton1').add('#idBokkingButton2').add('#idBokkingButton3').on('click', function (e) {
         var targetDiv = document.getElementById("modal-1").classList.add('md-show');
