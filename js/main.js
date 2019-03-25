@@ -23,7 +23,7 @@ $(document).ready(() => {
 
     $(() => {
 
-        $("#header").load("/mrcube/header.html", () => {
+        $("#header").load("/header.html", () => {
             navbarScroll();
 /*            var innerDivs = $("#header").html();*/
             /*            $("#header").remove();
@@ -31,9 +31,9 @@ $(document).ready(() => {
 
         });
 
-        $("#header-lv1").load("/mrcube/header-lv1.html");
-        $("#header-main").load("/mrcube/header-main.html");
-        $("#contact-info").load("/mrcube/footer.html");
+        $("#header-lv1").load("/header-lv1.html");
+        $("#header-main").load("/header-main.html");
+        $("#contact-info").load("/footer.html");
     });
 
     /*    offsetAnchor = () => {
