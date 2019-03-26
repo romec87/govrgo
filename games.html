@@ -25,12 +25,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="canonical" href="http:/.ru/games/">
+    <link rel="canonical" href="http://mrcube.ru/games/">
 
 
     <meta property="og:title" content="Клуб виртуальной реальности">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http:/.ru/">
+    <meta property="og:url" content="http://mrcube.ru/games">
     <meta property="og:site_name" content="зеленыйкуб">
     <meta property="og:description"
           content="">
@@ -78,37 +78,38 @@
             <div class="row row-centered">
                 <div class=" col-sm-2 "><p class="font-center-heading-3"><span
                         class="section-border">По сложности</span></p>
-                    <p class="font-games-menu" onclick="filterGames('level', 'Первый раз')">Первый раз</p>
-                    <p class="font-games-menu " onclick="filterGames('level', 'Бывалый')">Бывалый</p>
-                    <p class="font-games-menu" onclick="filterGames('level', 'Эксперт')">Эксперт</p>
+                    <p class="font-games-menu" onclick="filterGames('level', 'Первый раз'); scrollToGame();">Первый раз</p>
+                    <p class="font-games-menu " onclick="filterGames('level', 'Бывалый'); scrollToGame()">Бывалый</p>
+                    <p class="font-games-menu" onclick="filterGames('level', 'Эксперт'); scrollToGame()">Эксперт</p>
                 </div>
                 <div class="col-sm-2 "><p class="font-center-heading-3"><span class="section-border">По жанру</span></p>
-                    <p class="font-games-menu" onclick="filterGames('genre', 'Экшен')">Экшены</p>
-                    <p class="font-games-menu " onclick="filterGames('genre', 'Симулятор')">Симуляторы</p>
-                    <p class="font-games-menu" onclick="filterGames('genre', 'Спорт')">Спортивные игры</p>
-                    <p class="font-games-menu" onclick="filterGames('genre', 'Квест')">Квесты</p>
-                    <p class="font-games-menu" onclick="filterGames('genre', 'Шутер')">Шутеры</p>
+                    <p class="font-games-menu" onclick="filterGames('genre', 'Экшен'); scrollToGame()">Экшены</p>
+                    <p class="font-games-menu " onclick="filterGames('genre', 'Симулятор'); scrollToGame()">Симуляторы</p>
+                    <p class="font-games-menu" onclick="filterGames('genre', 'Спорт'); scrollToGame()">Спортивные игры</p>
+                    <p class="font-games-menu" onclick="filterGames('genre', 'Квест'); scrollToGame()">Квесты</p>
+                    <p class="font-games-menu" onclick="filterGames('genre', 'Шутер'); scrollToGame()">Шутеры</p>
+                    <p class="font-games-menu" onclick="filterGames('genre', 'Инди'); scrollToGame()">Инди</p>
                 </div>
                 <div class="col-sm-3 "><p class="font-center-heading-3"><span class="section-border">По возрасту</span>
                 </p>
-                    <p class="font-games-menu" onclick="filterGames('age', '6+')">6+</p>
-                    <p class="font-games-menu" onclick="filterGames('age', '10+')">10+</p>
-                    <p class="font-games-menu" onclick="filterGames('age', '14+')">14+</p>
-                    <p class="font-games-menu" onclick="filterGames('age', '16+')">16+</p>
-                    <p class="font-games-menu" onclick="filterGames('age', '18+')">18+</p>
+                    <p class="font-games-menu" onclick="filterGames('age', '7+'); scrollToGame()">7+</p>
+                    <p class="font-games-menu" onclick="filterGames('age', '12+'); scrollToGame()">12+</p>
+                    <p class="font-games-menu" onclick="filterGames('age', '16+'); scrollToGame()">16+</p>
+                    <p class="font-games-menu" onclick="filterGames('age', '18+'); scrollToGame()">18+</p>
                 </div>
                 <div class="col-sm-3 "><p class="font-center-heading-3"><span class="section-border">По режиму</span>
                 </p>
-                    <p class="font-games-menu" onclick="filterGames('gamers', '1 Игрок')">Одиночные</p>
-                    <p class="font-games-menu" onclick="filterGames('gamers', '1-2 Игрока')">1-2 Игрока</p>
-                    <p class="font-games-menu" onclick="filterGames('gamers', '1-4 Игрока')">1-4 Игрока</p>
+                    <p class="font-games-menu" onclick="filterGames('gamers', '1 Игрок'); scrollToGame()">Одиночные</p>
+                    <p class="font-games-menu" onclick="filterGames('gamers', '1-2 Игрока'); scrollToGame()">1-2 Игрока</p>
+                    <p class="font-games-menu" onclick="filterGames('gamers', '1-4 Игрока'); scrollToGame()">1-4 Игрока</p>
                 </div>
                 <div class="col-sm-2 "><p class="font-center-heading-3"><span class="section-border"
-                                                                              onclick="filterGames('Все')">Все</span>
+                                                                              onclick="filterGames('Все'); scrollToGame()">Все</span>
                 </p>
                 </div>
             </div>
 
+            <div class="scrollToHere"></div>
             <div id="filtredGamesId">
             </div>
 

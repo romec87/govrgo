@@ -23,17 +23,17 @@ $(document).ready(() => {
 
     $(() => {
 
-        $("#header").load("/header.html", () => {
+        $("#header").load("//mrcube.ru/header.html", () => {
             navbarScroll();
-/*            var innerDivs = $("#header").html();*/
+            /*            var innerDivs = $("#header").html();*/
             /*            $("#header").remove();
                         $("#rootDivId").prepend(innerDivs);*/
 
         });
 
-        $("#header-lv1").load("/header-lv1.html");
-        $("#header-main").load("/header-main.html");
-        $("#contact-info").load("/footer.html");
+        $("#header-lv1").load("//mrcube.ru/header-lv1.html");
+        $("#header-main").load("//mrcube.ru/header-main.html");
+        $("#contact-info").load("//mrcube.ru/footer.html");
     });
 
     /*    offsetAnchor = () => {
@@ -46,6 +46,14 @@ $(document).ready(() => {
     scrollToAnchor = (aid) => {
         $('html,body').animate({scrollTop: aid.offset().top - 50}, 'slow');
     }
+
+    scrollToGame = () => {
+        $('html,body').animate({
+                scrollTop: $(".scrollToHere").offset().top
+            },
+            'slow');
+    }
+
 
     //------------------------------------//
     //Scroll To//
