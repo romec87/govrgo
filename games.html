@@ -116,11 +116,11 @@
 
         </div>
 
-        <div class="row clearmarginonly">
+<!--        <div class="row clearmarginonly">
             <div id="buttonElseGameId" class="btn btn-all-games center-block">
                 ЕЩЕ
             </div>
-        </div>
+        </div>-->
     </section>
 
     <section id='contact-info' class="section-common"></section>
@@ -129,6 +129,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
@@ -164,12 +165,12 @@
             "                                </div>\n" +
             "                            </div>\n" +
             "                            <div class=\"row clearmargin\">\n" +
-            "                                <div class=\"font-left-game-descript-2\">" + val.description +
+            "                                <div class=\"font-left-game-mini-descript\">" + val.description +
             "                                </div>\n" +
             "                            </div>\n" +
             "                            <div class=\"row clearmargin\">\n" +
             "                                <div class=\"col-sm-6 col-xs-6 game-wraper-button \">\n" +
-            "                                    <a class=\"btn btn_game btn-sm  btn-xs btn-block\">КУПИТЬ БИЛЕТ</a>\n" +
+            "                                    <a class=\"btn btn_game btn-sm  btn-xs btn-block onClcickShowModal\">ИГРАТЬ</a>\n" +
             "                                </div>\n" +
             "                            </div>\n" +
             "                        </div>\n" +
@@ -218,12 +219,15 @@
         $.getJSON("json/filtergames.json", (data) => {
             dataGames = data;
             renderGames(dataGames);
+            mappingModalDialog();
         })
 
 
     </script>
 
 
+
 </div>
+<div id="modal-1"></div>
 </body>
 </html>
