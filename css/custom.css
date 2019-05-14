@@ -1047,44 +1047,42 @@ label.error {
 }
 
 
-/* styles for '...' */
-.block-with-text {
-    /* hide text if it more than N lines  */
-    overflow: hidden;
-    /* for set '...' in absolute position */
+.relative-props{
     position: relative;
-    /* use this value to count block height */
-    line-height: 1.2em;
-    /* max-height = line-height (1.2) * lines max number (3) */
-    max-height: 3.6em;
-    /* fix problem when last visible word doesn't adjoin right side  */
-    text-align: justify;
+}
 
-    /*margin-right: -1em; */
-    margin-right: 5px;
+.button-absolute-props{
+    bottom: 10px;
+    position: absolute;
+    left: 50%;
+ /*   transform: translate(-50%, 0);*/
+}
+
+/* mixin for multiline */
+.block-with-text {
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 3.6em;
+    text-align: justify;
+    margin-right: -1em;
     padding-right: 1em;
+    margin-right: 5px;
 }
 .block-with-text:before {
-    /* points in the end */
     content: '...';
-    /* absolute position */
     position: absolute;
-    /* set position to right bottom corner of block */
     right: 0;
     bottom: 0;
 }
 .block-with-text:after {
-    /* points in the end */
     content: '';
-    /* absolute position */
     position: absolute;
-    /* set position to right bottom corner of text */
     right: 0;
     width: 1em;
-    /* set width and height */
     height: 1em;
     margin-top: 0.2em;
-/*    background: white;*/
+    background: #333;
 }
 
 /*ipad ipad-pro*/
@@ -1140,6 +1138,19 @@ label.error {
 
 /*mobiles*/
 @media (max-width: 767px) {
+
+
+    .relative-props{
+        position: unset !important;
+    }
+
+    .button-absolute-props{
+        bottom: unset !important;
+        position: unset !important;
+        left: unset !important;
+        margin-top:10px
+        /*   transform: translate(-50%, 0);*/
+    }
 
     #pointer3 {
         height: 75px;
