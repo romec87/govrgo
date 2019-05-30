@@ -18,6 +18,10 @@
     padding-left: 0px;
 }
 
+.min-height-none{
+    min-height: 0px !important;
+}
+
 /* Default to hide the video on all devices */
 #video {
     display: none
@@ -146,6 +150,10 @@
 
 .min-width-100 {
     min-width: 100%;
+}
+
+.width-100 {
+    width: 100%;
 }
 
 .btn:hover {
