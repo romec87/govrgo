@@ -784,6 +784,11 @@ h3_1 {
     min-width: 160px;
 }
 
+
+.max-width-button-160 {
+    max-width: 160px;
+}
+
 .header-margin-top a:focus, .header-info a:focus, .header-info a:hover, .green-hover-border a:hover {
     text-decoration: none;
     color: white;
@@ -1147,6 +1152,11 @@ label.error {
 /*mobiles*/
 @media (max-width: 767px) {
 
+
+    .margin-left-right-50 {
+        margin-left: 15px;
+        margin-right: 15px
+    }
 
     .relative-props{
         position: unset !important;

@@ -1,0 +1,390 @@
+
+.full-image-size-descript {
+    width: 100%;
+}
+
+iframe {
+    height: 600px;
+}
+
+.img-discr-game {
+    height: 600px;
+    width: 100%;
+}
+/*div#video_slide {
+    height: 326px;
+}*/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container-game-descript {
+    position: relative;
+    height: 600px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+/*        .cursor {
+            cursor: pointer;
+        }*/
+
+.margin-slide-mage-top {
+    margin-top: 2em
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    /*            cursor: pointer;*/
+    position: absolute;
+    top: 58%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    margin-left: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.back_button {
+    /*            cursor: pointer;*/
+    display: inline-block;
+    font: bold 18px/45px 'verdana';
+    border: 0;
+    padding: 0 22px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    background: none;
+    border: solid #14a3f1 2px;
+}
+
+.back_button:hover {
+    background-color: #14a3f1;
+}
+
+.video_block {
+    position: relative;
+    margin: 0;
+    display: inline-block;
+}
+
+.text_block {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    max-width: 300px;
+    text-align: left;
+    margin-left: 3%;
+    position: relative;
+    top: 1em;
+}
+
+.wrapper_box {
+    width: 52%;
+    display: inline-block;
+    max-width: 640px;
+    min-width: 100%;
+}
+
+
+.image_block {
+    position: relative;
+}
+
+@media (max-width: 1200px) {
+    .container-game-descript {
+        height: 500px;
+    }
+
+    .image_block {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper_box {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 100%;
+        max-width: 640px;
+        margin: 0;
+    }
+
+    .back_bblock {
+        text-align: center;
+    }
+
+    iframe {
+        height: 500.1px;
+    }
+
+/*    div#video_slide {
+        height: 251.16px;
+    }*/
+
+    .img-discr-game {
+        height: 500.1px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .wrapper_box {
+        width: 500px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 500px;
+    }
+
+    iframe {
+        height: 281.33px;
+    }
+
+    .container-game-descript {
+        height: 281.33px;
+    }
+
+    .img-discr-game {
+        height: 281px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 565px) {
+    .wrapper_box {
+        width: 400px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 400px;
+    }
+
+    iframe {
+        height: 190.06px;
+    }
+
+    .container-game-descript {
+        height: 190.06px;
+    }
+
+    .img-discr-game {
+        height: 190.06px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .wrapper_box {
+        width: 380px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 380px;
+        font-size: 15px;
+    }
+
+    iframe {
+        height: 213.81px;
+    }
+
+    .container-game-descript {
+        height: 213.81px;
+    }
+}
+
+@media (max-width: 440px) {
+    .wrapper_box {
+        width: 360px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 360px;
+    }
+
+    iframe {
+        height: 202.55px;
+    }
+
+    .container-game-descript {
+        height: 202.55px;
+    }
+}
+
+@media (max-width: 420px) {
+    .wrapper_box {
+        width: 330px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 330px;
+        font-size: 12px;
+    }
+
+    iframe {
+        height: 185.67px;
+    }
+
+    .container-game-descript {
+        height: 185.67px;
+    }
+}
+
+@media (max-width: 390px) {
+    .wrapper_box {
+        width: 300px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 300px;
+    }
+
+    iframe {
+        height: 168.8px;
+    }
+
+    .container-game-descript {
+        height: 168.8px;
+    }
+}
+
+/*@media (max-width: 370px) {
+    .wrapper_box {
+        width: 280px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 280px;
+    }
+
+    iframe {
+        height: 157.53px;
+    }
+
+    .container-game-descript {
+        height: 157.53px;
+    }
+}
+
+@media (max-width: 350px) {
+    .wrapper_box {
+        width: 270px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 270px;
+    }
+
+    iframe {
+        height: 151.91px;
+    }
+
+    .container-game-descript {
+        height: 151.91px;
+    }
+}
+
+@media (max-width: 330px) {
+    .wrapper_box {
+        width: 265px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 265px;
+    }
+
+    iframe {
+        height: 149.09px;
+    }
+
+    .container-game-descript {
+        height: 149.09px;
+    }
+}
+
+@media (max-width: 320px) {
+    .wrapper_box {
+        width: 260px;
+        min-width: 100%;
+    }
+
+    .text_block {
+        width: 260px;
+    }
+
+    iframe {
+        height: 146.28px;
+    }
+
+    .container-game-descript {
+        height: 146.28px;
+    }
+}*/
